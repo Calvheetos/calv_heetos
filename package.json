@@ -1,6 +1,6 @@
 {
-    "name": "calv_heetos.github.io",
-    "homepage": "https://calvheetos.github.io/calv_heetos.github.io/",
+    "name": "calv_heetos",
+    "homepage": "https://calvheetos.github.io/calv_heetos/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
