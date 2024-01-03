@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/calv_heetos.github.io/static/css/main.c2d8bd1b.css",
+    "main.js": "/calv_heetos.github.io/static/js/main.5e8301a9.js",
+    "static/js/787.1ba8fbe1.chunk.js": "/calv_heetos.github.io/static/js/787.1ba8fbe1.chunk.js",
+    "static/media/cursor.jpeg": "/calv_heetos.github.io/static/media/cursor.3344e2b680529c673241.jpeg",
+    "index.html": "/calv_heetos.github.io/index.html",
+    "main.c2d8bd1b.css.map": "/calv_heetos.github.io/static/css/main.c2d8bd1b.css.map",
+    "main.5e8301a9.js.map": "/calv_heetos.github.io/static/js/main.5e8301a9.js.map",
+    "787.1ba8fbe1.chunk.js.map": "/calv_heetos.github.io/static/js/787.1ba8fbe1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2d8bd1b.css",
+    "static/js/main.5e8301a9.js"
+  ]
+}
