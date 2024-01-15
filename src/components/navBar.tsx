@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { IsProjectsRoute } from "../functions/isProject";
+import { consts } from "../data/consts";
+import { Link } from "react-router-dom";
 
 export function NavBar() {
 
@@ -27,8 +29,8 @@ export function NavBar() {
     return (
         <nav className={`h-16 px-6 py-4 flex justify-between absolute top-0 left-0 w-full overflow-hidden ${IsProjectsRoute() ? "bg-black" : " bg-white"}`}>
             <div className={`flex gap-5 ${IsProjectsRoute() ? "text-white" : " text-black"}`}>
-                <a href="/">About</a>
-                <a href="/projects">Projects</a>
+                <Link to={`/`}>About</Link>
+                <Link to={`/projects`}>Projects</Link>
             </div>
             <p className={`${IsProjectsRoute() ? "text-white" : " text-black"}`}>{currentDate}</p>
         </nav>

@@ -3,23 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Home } from './pages/Home';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Projects } from './pages/Projects';
+import { consts } from './data/consts';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter basename={consts.baseRoute}> 
       <Routes>
-
-        <Route path="/" Component={Home} />
-        <Route path="/projects" Component={Projects} />
+        <Route path="/*" element={<Home />} /> 
+        <Route path="/projects" element={<Projects />} /> 
       </Routes>
-
-    </Router>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
 reportWebVitals();
+

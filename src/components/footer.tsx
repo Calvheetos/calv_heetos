@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { consts } from "../data/consts";
 import { IsProjectsRoute } from "../functions/isProject";
 
 export function Footer() {
@@ -13,8 +15,8 @@ export function Footer() {
         <a href="">Behance</a>
       </div>
       <div className="flex flex-col items-end justify-end gap-3">
-        {IsProjectsRoute() ? null : <a href="/projects">Check out to what I’ve done!!</a>}
-        <a href="" className={`aspect-square ${IsProjectsRoute() ? "bg-white" : " bg-black"} h-12 w-12`}></a>
+        {IsProjectsRoute() ? null : <Link to={`/projects`}>Check out to what I’ve done!!</Link>}
+        <Link to="" className={`aspect-square ${IsProjectsRoute() ? "bg-white" : " bg-black"} h-12 w-12`}></Link>
       </div>
 
     </footer>
