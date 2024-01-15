@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { consts } from "../data/consts";
 import { IsProjectsRoute } from "../functions/isProject";
 
 export function Footer() {

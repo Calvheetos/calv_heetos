@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { IsProjectsRoute } from "../functions/isProject";
-import { consts } from "../data/consts";
 import { Link } from "react-router-dom";
 
 export function NavBar() {
