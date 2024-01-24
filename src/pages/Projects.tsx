@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 import { Footer } from "../components/footer";
 import { NavBar } from "../components/navBar";
 
 export function Projects() {
     const gridItems = Array.from({ length: 55 }, (_, index) => (
-        <a key={index} href="" className="grid grid-cols-3 pb-3 border-b-2 border-white text-white">
+        <Link key={index+1} to="/projects/map" className="grid grid-cols-3 pb-3 border-b-2 border-white text-white hover:text-red-500">
             <p>ROOTKey {index} (Nome)</p>
             <p className="text-center">BB (Empresa)</p>
-            <p className="text-end">05|2021 (Mês|Ano)</p>
-        </a>
+            <p className="text-end">05 | 2021 (Mês|Ano)</p>
+        </Link>
     ));
 
     return (
@@ -15,6 +16,11 @@ export function Projects() {
             <NavBar />
             <div />
             <div className="px-12 py-3 flex flex-col gap-3 w-[50%] h-full">
+                <Link key={1} to="/projects/map" className="grid grid-cols-3 pb-3 border-b-2 border-white text-white  hover:text-red-500">
+                    <p>Projeto Mapa</p>
+                    <p className="text-center">Mestrado </p>
+                    <p className="text-end">02 | 2024 </p>
+                </Link>
                 {gridItems}
             </div>
             <Footer />

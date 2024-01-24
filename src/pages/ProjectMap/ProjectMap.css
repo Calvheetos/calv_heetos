@@ -1,0 +1,3 @@
+.ProjectMap :is(rect, path):hover {
+    fill: red;
+}
