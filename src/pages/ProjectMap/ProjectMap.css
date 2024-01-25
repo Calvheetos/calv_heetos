@@ -1,3 +1,20 @@
 .ProjectMap :is(rect, path):hover {
     fill: red;
 }
+
+.ProjectMap svg {
+    max-width: 70%;
+    margin: auto;
+    overflow-x: scroll;
+}
+
+.ProjectMap {
+    overflow-x: scroll;
+}
+
+.ProjectMap .areas {
+    max-width: unset;
+    position: absolute;
+    height: 100vh;
+    left: 20vw;
+}
