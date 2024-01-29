@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/calv_heetos/static/css/main.ccc32319.css",
-    "main.js": "/calv_heetos/static/js/main.be23be37.js",
+    "main.css": "/calv_heetos/static/css/main.7505512a.css",
+    "main.js": "/calv_heetos/static/js/main.24011276.js",
     "static/js/787.ba9f0948.chunk.js": "/calv_heetos/static/js/787.ba9f0948.chunk.js",
     "static/media/cursor.jpeg": "/calv_heetos/static/media/cursor.3344e2b680529c673241.jpeg",
     "index.html": "/calv_heetos/index.html",
-    "main.ccc32319.css.map": "/calv_heetos/static/css/main.ccc32319.css.map",
-    "main.be23be37.js.map": "/calv_heetos/static/js/main.be23be37.js.map",
+    "main.7505512a.css.map": "/calv_heetos/static/css/main.7505512a.css.map",
+    "main.24011276.js.map": "/calv_heetos/static/js/main.24011276.js.map",
     "787.ba9f0948.chunk.js.map": "/calv_heetos/static/js/787.ba9f0948.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccc32319.css",
-    "static/js/main.be23be37.js"
+    "static/css/main.7505512a.css",
+    "static/js/main.24011276.js"
   ]
 }
