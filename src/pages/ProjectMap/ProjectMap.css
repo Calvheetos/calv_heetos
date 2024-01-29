@@ -18,3 +18,61 @@
     height: 100vh;
     left: 20vw;
 }
+
+.ProjectMap .posters {
+    position: relative;
+    max-width: 90vw;
+}
+
+.ProjectMap .posters .btns {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.ProjectMap .posters._1 {
+    display: grid;
+    grid-template-columns: repeat( 2, 50%);
+    width: 70vw;
+    gap: 20px;
+}
+
+.ProjectMap .posters._1 img {
+    width: 100%;
+}
+
+.ProjectMap .posters._2 {
+    display: flex;
+    width: 60vw;
+    gap: 10px;
+}
+
+.ProjectMap .posters._2 img {
+    max-height: 80vh;
+}
+
+.ProjectMap .posters._3 {
+    display: grid;
+    grid-template-columns: repeat(8, calc(100% / 8));
+    width: 60vw;
+    gap: 10px;
+}
+
+.ProjectMap .posters._3 img {
+    max-height: 20vh;
+}
+
+.ProjectMap .fotos {
+    width: 90vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat( 8, calc(100% / 8));
+}
+
+.ProjectMap .fotos img {
+    width: auto;
+    height: auto;
+}
