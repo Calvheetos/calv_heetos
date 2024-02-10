@@ -1,0 +1,6 @@
+export const history = <div className="max-w-[80vw] flex flex-col gap-3">
+    <h4 className="text-[#00FFFF] font-mono">ENG</h4>
+    <p className="font-mono">Pescanseco Fundeiro, located in the municipality of Pampilhosa da Serra, Coimbra district, stands out not only for its geographic location but also for the resilience of its community against natural challenges. The village, marked by recent wildfires that affected Portugal, has seen the reconstruction of homes and the resurgence of life by its inhabitants. This event reflects the strength and overcoming capacity of small Portuguese rural communities, highlighting the importance of solidarity and mutual support in times of adversity.</p>
+    <h4 className="text-[#00FF38] font-mono">PT</h4>
+    <p className="font-mono ">Pescanseco Fundeiro, situa-se no concelho da Pampilhosa da Serra, distrito de Coimbra, destaca-se não apenas pela sua localização geográfica, mas também pela resiliência de sua comunidade frente aos desafios naturais. A aldeia, marcada por incêndios recentes que afetaram Portugal, viu a reconstrução de casas e a retomada da vida pelos seus habitantes. Este episódio reflete a força e a capacidade de superação das pequenas comunidades rurais portuguesas, evidenciando a importância da solidariedade e do apoio mútuo em momentos de adversidade.</p>
+</div>
