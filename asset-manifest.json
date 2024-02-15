@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/calv_heetos/static/css/main.be91e55e.css",
-    "main.js": "/calv_heetos/static/js/main.3c88f614.js",
+    "main.css": "/calv_heetos/static/css/main.cffecd98.css",
+    "main.js": "/calv_heetos/static/js/main.214991eb.js",
     "static/js/787.ba9f0948.chunk.js": "/calv_heetos/static/js/787.ba9f0948.chunk.js",
     "static/media/foto (4).png": "/calv_heetos/static/media/foto (4).bbc40380b3c875be2e6f.png",
     "static/media/foto (2).png": "/calv_heetos/static/media/foto (2).56bba11f9046d4b824b6.png",
@@ -68,12 +68,12 @@
     "static/media/poster (15).png": "/calv_heetos/static/media/poster (15).a0e7ac3257b99c85146d.png",
     "static/media/cursor.jpeg": "/calv_heetos/static/media/cursor.3344e2b680529c673241.jpeg",
     "index.html": "/calv_heetos/index.html",
-    "main.be91e55e.css.map": "/calv_heetos/static/css/main.be91e55e.css.map",
-    "main.3c88f614.js.map": "/calv_heetos/static/js/main.3c88f614.js.map",
+    "main.cffecd98.css.map": "/calv_heetos/static/css/main.cffecd98.css.map",
+    "main.214991eb.js.map": "/calv_heetos/static/js/main.214991eb.js.map",
     "787.ba9f0948.chunk.js.map": "/calv_heetos/static/js/787.ba9f0948.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be91e55e.css",
-    "static/js/main.3c88f614.js"
+    "static/css/main.cffecd98.css",
+    "static/js/main.214991eb.js"
   ]
 }
