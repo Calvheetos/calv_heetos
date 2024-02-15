@@ -15,7 +15,7 @@ export function Projects() {
         <div className='mt-16 w-[100vw] h-[100vh] overflow-x-hidden overflow-y-auto bg-black'>
             <NavBar />
             <div />
-            <div className="px-12 py-3 flex flex-col gap-3 w-[50%] h-full">
+            <div className="grid grid-cols-3 gap-4 w-full h-full p-6">
                 <Link key={1} to="/projects/map" className="grid grid-cols-3 pb-3 border-b-2 border-white text-white  hover:text-red-500">
                     <p>Projeto Mapa</p>
                     <p className="text-center">Mestrado </p>

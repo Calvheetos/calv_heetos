@@ -19,7 +19,7 @@ import poster16 from "../img/poster (16).png";
 export function Posters(view: number, setView: any) {
 
     return (
-        <div className={`posters ${view !== 0 ? `_${view}` : null}`}>
+        <div className={`posters ${view !== 0 ? `_${view || "_1"}` : null}`}>
             <div className="btns">
                 <button onClick={() => { setView(1) }}>Visão 0.1</button>
                 <button onClick={() => { setView(2) }}>Visão 0.2</button>

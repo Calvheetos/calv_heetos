@@ -22,6 +22,10 @@
 .ProjectMap .posters {
     position: relative;
     max-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(8, calc(100% / 8));
+    width: 60vw;
+    gap: 10px;
 }
 
 .ProjectMap .posters .btns {
@@ -33,14 +37,14 @@
     flex-direction: column;
 }
 
-.ProjectMap .posters._1 {
+.ProjectMap .posters._3 {
     display: grid;
     grid-template-columns: repeat( 2, 50%);
     width: 70vw;
     gap: 20px;
 }
 
-.ProjectMap .posters._1 img {
+.ProjectMap .posters._3 img {
     width: 100%;
 }
 
@@ -54,14 +58,14 @@
     max-height: 80vh;
 }
 
-.ProjectMap .posters._3 {
+.ProjectMap .posters._1 {
     display: grid;
     grid-template-columns: repeat(8, calc(100% / 8));
     width: 60vw;
     gap: 10px;
 }
 
-.ProjectMap .posters._3 img {
+.ProjectMap .posters._1 img {
     max-height: 20vh;
 }
 

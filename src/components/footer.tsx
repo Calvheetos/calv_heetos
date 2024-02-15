@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { IsProjectsRoute } from "../functions/isProject";
-
+import tri from '../assets/tri.png'
+import triBlack from '../assets/tri_black.png'
 export function Footer() {
 
   return (
@@ -15,7 +16,9 @@ export function Footer() {
       </div>
       <div className="flex flex-col items-end justify-end gap-3">
         {IsProjectsRoute() ? null : <Link to={`/projects`}>Check out to what I’ve done!!</Link>}
-        <Link to="" className={`aspect-square ${IsProjectsRoute() ? "bg-white" : " bg-black"} h-12 w-12`}></Link>
+        <Link to="" className={`w-12 h-12`}>
+          <img src={IsProjectsRoute() ? tri : triBlack} alt="" />
+        </Link>
       </div>
 
     </footer>
