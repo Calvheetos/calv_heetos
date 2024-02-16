@@ -17,6 +17,7 @@
     position: absolute;
     height: 100vh;
     left: 0vw;
+    margin: 0;
 }
 
 .ProjectMap .posters {

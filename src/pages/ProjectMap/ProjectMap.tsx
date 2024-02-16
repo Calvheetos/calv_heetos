@@ -117,26 +117,26 @@ export function ProjectMap() {
                         right: `${position.right}vw`,
                         border: '1px solid black',
                         padding: '2px 13px',
-                        color: "black",
-                        background: "white",
+                        color: "#C1FF00",
+                        background: "black",
                         fontSize: "10px",
                         zIndex: "999",
-
+                        textTransform: "capitalize"
                     }}>{currentObjectName}</span> : null}
                 <div className="flex flex-col justify-start gap-24 items-start max-w-[15vw] h-[90%]">
                     <p className="max-w-[50%]">THE MAP IS NOT THE TERRITORY</p>
-                    <div className=" text-white w-auto h-fit flex flex-col items-start gap-3 justify-start">
+                    <div className=" text-white w-auto h-fit flex flex-col items-start gap-2 justify-start">
                         <p className="text-[#C1FF00] font-bold text-xl uppercase">MENU</p>
-                        <button type="button" onClick={() => { setShow("map") }} className={`uppercase text-[13px] ${show === "map" ? "text-[#5C6739]" : null}`}>land and lords</button>
-                        <button type="button" onClick={() => { setShow("quantidade") }} className={`uppercase text-[13px] ${show === "quantidade" ? "text-[#5C6739]" : null}`}>homes per person</button>
-                        <button type="button" onClick={() => { setShow("casas") }} className={`uppercase text-[13px] ${show === "casas" ? "text-[#5C6739]" : null}`}>area growth chart</button>
-                        <button type="button" onClick={() => { setShow("areas") }} className={`uppercase text-[13px] ${show === "areas" ? "text-[#5C6739]" : null}`}>growing areas</button>
-                        <button type="button" onClick={() => { setShow("relacoes") }} className={`uppercase text-[13px] ${show === "relacoes" ? "text-[#5C6739]" : null}`}>relationship</button>
-                        <button type="button" onClick={() => { setShow("coordinates") }} className={`uppercase text-[13px] ${show === "coordinates" ? "text-[#5C6739]" : null}`}>coordinates</button>
-                        <button type="button" onClick={() => { setShow("shapes") }} className={`uppercase text-[13px] ${show === "shapes" ? "text-[#5C6739]" : null}`}>form/shape</button>
-                        <button type="button" onClick={() => { setShow("fotos") }} className={`uppercase text-[13px] ${show === "fotos" ? "text-[#5C6739]" : null}`}>pictures</button>
-                        <button type="button" onClick={() => { setShow("postes") }} className={`uppercase text-[13px] ${show === "postes" ? "text-[#5C6739]" : null}`}>posters</button>
-                        <button type="button" onClick={() => { setShow("history") }} className={`uppercase text-[13px] ${show === "history" ? "text-[#5C6739]" : null}`}>history</button>
+                        <button type="button" onClick={() => { setShow("map") }} className={`uppercase text-[10px] ${show === "map" ? "text-[#5C6739]" : null}`}>land and lords</button>
+                        <button type="button" onClick={() => { setShow("quantidade") }} className={`uppercase text-[10px] ${show === "quantidade" ? "text-[#5C6739]" : null}`}>homes per person</button>
+                        <button type="button" onClick={() => { setShow("casas") }} className={`uppercase text-[10px] ${show === "casas" ? "text-[#5C6739]" : null}`}>area growth chart</button>
+                        <button type="button" onClick={() => { setShow("areas") }} className={`uppercase text-[10px] ${show === "areas" ? "text-[#5C6739]" : null}`}>growing areas</button>
+                        <button type="button" onClick={() => { setShow("relacoes") }} className={`uppercase text-[10px] ${show === "relacoes" ? "text-[#5C6739]" : null}`}>relationship</button>
+                        <button type="button" onClick={() => { setShow("coordinates") }} className={`uppercase text-[10px] ${show === "coordinates" ? "text-[#5C6739]" : null}`}>coordinates</button>
+                        <button type="button" onClick={() => { setShow("shapes") }} className={`uppercase text-[10px] ${show === "shapes" ? "text-[#5C6739]" : null}`}>form/shape</button>
+                        <button type="button" onClick={() => { setShow("fotos") }} className={`uppercase text-[10px] ${show === "fotos" ? "text-[#5C6739]" : null}`}>pictures</button>
+                        <button type="button" onClick={() => { setShow("postes") }} className={`uppercase text-[10px] ${show === "postes" ? "text-[#5C6739]" : null}`}>posters</button>
+                        <button type="button" onClick={() => { setShow("history") }} className={`uppercase text-[10px] ${show === "history" ? "text-[#5C6739]" : null}`}>history</button>
                     </div>
                 </div>
                 <div className="absolute top-0 left-[15vw] w-full h-full overflow-scroll pb-20">
