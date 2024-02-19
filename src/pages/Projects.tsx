@@ -37,12 +37,12 @@ export function Projects() {
             <div />
             <div className="grid sm:grid-cols-6 md:grid-cols-11  gap-4 w-full h-auto  p-6">
                 <Link key={1} to="/projects/map" className="relative overflow-hidden p-2 aspect-square w-full flex flex-col items-start justify-between">
-                    <p className="text-white z-10">THE MAP IS NOT THE TERRITORY</p>
-                    <p className="text-white z-10">ESAD </p>
-                    <p className="text-white z-10">02 | 2024 </p>
+                    <p className="text-white z-10 text-[12px] text-clip w-full h-fit">THE MAP IS NOT THE TERRITORY</p>
+                    <p className="text-white z-10 text-[12px] text-clip w-full h-fit">ESAD </p>
+                    <p className="text-white z-10 text-[12px] text-clip w-full h-fit">02 | 2024 </p>
                     <img src={poster} alt="" className="absolute top-0 left-0 w-full brightness-[40%] hover:brightness-[50%] transition-all duration-200" />
                 </Link>
-                {gridItems}
+                {/*gridItems*/}
             </div>
             <Footer />
         </div>
