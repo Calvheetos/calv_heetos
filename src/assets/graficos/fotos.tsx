@@ -49,7 +49,7 @@ import foto47 from "../fotos/foto (47).png";
 export function Fotos(view: number, setView: any) {
 
     return (
-        <div className={`fotos ${view !== 0 ? `_${view}` : null}`}>
+        <div className={`posters ${view !== 0 ? `_${view || "_2"}` : null}`}>
             <div className="btns">
                 <button onClick={() => { setView(1) }}>Visão 0.1</button>
                 <button onClick={() => { setView(2) }}>Visão 0.2</button>

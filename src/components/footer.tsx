@@ -16,7 +16,7 @@ export function Footer() {
       </div>
       <div className="flex flex-col items-end justify-end gap-3">
         {IsProjectsRoute() ? null : <Link to={`/projects`}>Check out to what I’ve done!!</Link>}
-        <Link to="" className={`w-12 h-12`}>
+        <Link to="/projects" className={`w-12 h-12`}>
           <img src={IsProjectsRoute() ? tri : triBlack} alt="" />
         </Link>
       </div>
