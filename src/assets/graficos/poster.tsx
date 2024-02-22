@@ -14,6 +14,24 @@ import poster13 from "../img/poster (13).png";
 import poster14 from "../img/poster (14).png";
 import poster15 from "../img/poster (15).png";
 import poster16 from "../img/poster (16).png";
+import poster17 from "../img/poster (17).png";
+import poster18 from "../img/poster (18).png";
+import poster19 from "../img/poster (19).png";
+import poster20 from "../img/poster (20).png";
+import poster21 from "../img/poster (21).png";
+import poster22 from "../img/poster (22).png";
+import poster23 from "../img/poster (23).png";
+import poster24 from "../img/poster (24).png";
+import poster25 from "../img/poster (25).png";
+import poster26 from "../img/poster (26).png";
+import poster27 from "../img/poster (27).png";
+import poster28 from "../img/poster (28).png";
+import poster29 from "../img/poster (29).png";
+import poster30 from "../img/poster (30).png";
+import poster31 from "../img/poster (31).png";
+import poster32 from "../img/poster (32).png";
+import poster33 from "../img/poster (33).png";
+import poster34 from "../img/poster (34).png";
 
 
 export function Posters(view: number, setView: any) {
@@ -41,6 +59,24 @@ export function Posters(view: number, setView: any) {
             <img src={poster14} alt="" />
             <img src={poster15} alt="" />
             <img src={poster16} alt="" />
+            <img src={poster17} alt="" />
+            <img src={poster18} alt="" />
+            <img src={poster19} alt="" />
+            <img src={poster20} alt="" />
+            <img src={poster21} alt="" />
+            <img src={poster22} alt="" />
+            <img src={poster23} alt="" />
+            <img src={poster24} alt="" />
+            <img src={poster25} alt="" />
+            <img src={poster26} alt="" />
+            <img src={poster27} alt="" />
+            <img src={poster28} alt="" />
+            <img src={poster29} alt="" />
+            <img src={poster30} alt="" />
+            <img src={poster31} alt="" />
+            <img src={poster32} alt="" />
+            <img src={poster33} alt="" />
+            <img src={poster34} alt="" />
         </div>
     )
 }

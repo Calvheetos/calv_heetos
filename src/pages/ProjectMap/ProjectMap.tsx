@@ -131,7 +131,6 @@ export function ProjectMap() {
                         <button type="button" onClick={() => { setShow("quantidade") }} className={`uppercase text-[10px] ${show === "quantidade" ? "text-[#5C6739]" : null}`}>homes per person</button>
                         <button type="button" onClick={() => { setShow("casas") }} className={`uppercase text-[10px] ${show === "casas" ? "text-[#5C6739]" : null}`}>area growth chart</button>
                         <button type="button" onClick={() => { setShow("areas") }} className={`uppercase text-[10px] ${show === "areas" ? "text-[#5C6739]" : null}`}>growing areas</button>
-                        <button type="button" onClick={() => { setShow("relacoes") }} className={`uppercase text-[10px] ${show === "relacoes" ? "text-[#5C6739]" : null}`}>relationship</button>
                         <button type="button" onClick={() => { setShow("coordinates") }} className={`uppercase text-[10px] ${show === "coordinates" ? "text-[#5C6739]" : null}`}>coordinates</button>
                         <button type="button" onClick={() => { setShow("shapes") }} className={`uppercase text-[10px] ${show === "shapes" ? "text-[#5C6739]" : null}`}>form/shape</button>
                         <button type="button" onClick={() => { setShow("fotos") }} className={`uppercase text-[10px] ${show === "fotos" ? "text-[#5C6739]" : null}`}>pictures</button>
