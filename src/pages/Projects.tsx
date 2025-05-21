@@ -9,7 +9,7 @@ export function Projects() {
         <div className='mt-16 w-[100vw] h-[100vh] overflow-x-hidden overflow-y-auto bg-black'>
             <NavBar />
             <div />
-            <div className="grid w-full h-auto gap-4 p-6 sm:grid-cols-6 md:grid-cols-11">
+            <div className="grid w-full h-auto gap-4 p-6 sm:grid-cols-[repeat(auto-fit,8rem)]">
                 <Link key={1} to="/projects/map" className="relative flex flex-col items-start justify-between w-full p-2 overflow-hidden aspect-square">
                     <p className="text-white z-10 text-[12px] text-clip w-full h-fit">THE MAP IS NOT THE TERRITORY</p>
                     <p className="text-white z-10 text-[12px] text-clip w-full h-fit">ESAD </p>

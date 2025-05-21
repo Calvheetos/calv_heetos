@@ -1,4 +1,21 @@
-export const projectsData = [
+export type Project = {
+  title: string;
+  projectType: string[];
+  date: string;
+  collaborators: string[];
+  tags: string[];
+  notes: string;
+  id: string;
+  image: string;
+  images?: string[];
+  banner?: string;
+  url?: string;
+  share?: string;
+  info_pt: string;
+  info_en: string;
+};
+
+export const projectsData: Project[] = [
   {
     title: "Marina Abramovic",
     projectType: ["VISUAL IDENTITY"],
@@ -8,6 +25,17 @@ export const projectsData = [
     notes: "'21",
     id: "000 000 000 305 21",
     image: "/assets/fotos/foto (1).png",
+    banner: "/public/projects/01._MARINA_ABRAMOVIC/BANNERS-1_(dragged).png",
+    images: [
+      "/public/projects/01._MARINA_ABRAMOVIC/Asset_8.png",
+      "/public/projects/01._MARINA_ABRAMOVIC/BANNERS-2_(dragged).png",
+      "/public/projects/01._MARINA_ABRAMOVIC/BANNERS-3_(dragged).png",
+      "/public/projects/01._MARINA_ABRAMOVIC/BANNERS-4_(dragged).png",
+      "/public/projects/01._MARINA_ABRAMOVIC/capa_catalogo_copy.png",
+      "/public/projects/01._MARINA_ABRAMOVIC/CARTAZES3-2_(dragged).png",
+      "/public/projects/01._MARINA_ABRAMOVIC/CARTAZES3-3_(dragged).png",
+      "/public/projects/01._MARINA_ABRAMOVIC/envelope_02_copy.png",
+    ],
     info_pt:
       "No âmbito da licenciatura em Design Gráfico e Multimédia na ESAD.CR – Escola Superior de Artes e Design, desenvolvi um projeto de identidade visual inspirado na obra e no universo conceptual de Marina Abramovic, com base no documentário The Artist Is Present (2012) e numa investigação aprofundada sobre o seu percurso artístico. Este exercício consistiu na criação de uma marca visual que traduzisse graficamente os principais valores da artista — como a entrega emocional, a dor, a resistência, a espiritualidade e a relação entre corpo e mente — num sistema visual coeso, contemporâneo e profundamente conceptual.\n\nO projeto incluiu o desenvolvimento de logótipo, assinaturas visuais, estacionário, sistema de declinações e um conjunto de aplicações complementares, nomeadamente capas de catálogo, materiais promocionais e sinalética de exposição. Foi também elaborado um manual de normas gráficas, com grelhas de construção, definições tipográficas, paleta cromática, aplicações sobre fundos, áreas de proteção e regras de utilização. A investigação realizada permitiu uma abordagem sensível e crítica, procurando que a identidade gráfica funcionasse como uma extensão simbólica da presença, da resistência e da energia feminina que caracterizam a obra performativa de Abramovic.",
     info_en:
@@ -22,6 +50,15 @@ export const projectsData = [
     notes: "'22",
     id: "000 000 000 000 22",
     image: "/assets/fotos/foto (1).png",
+    banner: "/public/projects/02._FESTIVAL_IMPULSO/Hpreto_copy.png",
+    images: [
+      "/public/projects/02._FESTIVAL_IMPULSO/credenciais_final_copy.png",
+      "/public/projects/02._FESTIVAL_IMPULSO/GUIA_MOCKUP_FINAL_copy.png",
+      "/public/projects/02._FESTIVAL_IMPULSO/Hpreto_copy.png",
+      "/public/projects/02._FESTIVAL_IMPULSO/VERTICAL_2.png",
+      "/public/projects/02._FESTIVAL_IMPULSO/Vpreto_copy.png",
+      "/public/projects/02._FESTIVAL_IMPULSO/WARM_UP_2.png",
+    ],
     info_pt:
       "Em parceria com a Patrícia Mota, desenvolvi a identidade visual para o Festival Impulso 2022, um evento multidisciplinar que promove música alternativa, cinema independente e artes visuais. Este projeto foi realizado no âmbito da licenciatura em Design Gráfico e Multimédia na ESAD.CR – Escola Superior de Artes e Design, nas Caldas da Rainha. O nosso desafio consistiu em criar uma linguagem visual forte, original e coerente, capaz de comunicar eficazmente a diversidade e a energia do festival, adaptando-se a diferentes formatos e plataformas.\n\nAo longo do processo, criámos o logótipo e as suas variações cromáticas, cartazes para os artistas e bandas (em formatos horizontal, vertical e para eventos warm-up), flyers com os horários e planta do evento, bem como a comunicação gráfica para redes sociais como o Instagram e o Facebook.\n\nDesenvolvemos ainda peças físicas como bilhetes, pulseiras, credenciais, copos reutilizáveis e artigos de merchandising. Este projeto permitiu-me aplicar e consolidar competências em direção artística, branding e design para eventos, sempre com uma abordagem colaborativa e focada em soluções visuais estratégicas. O resultado refletiu o espírito contemporâneo e descentralizador do Festival Impulso, contribuindo para a sua presença marcante no panorama cultural português.",
     info_en:
@@ -66,6 +103,10 @@ export const projectsData = [
     notes: "'21",
     id: "000 000 000 002 511 21",
     image: "/assets/fotos/foto (1).png",
+    images: [
+      "/public/projects/05._CLIMATE_CHANGE/2mockup_copy.png",
+      "/public/projects/05._CLIMATE_CHANGE/fotomontagem_copy.png",
+    ],
     info_pt:
       "No âmbito da unidade curricular de Projeto de Design Gráfico 3, no 3.º ano da licenciatura na ESAD.CR, desenvolvi o projeto “Revolução Final”, uma proposta crítica sobre o impacto da publicidade no espaço urbano e no nosso modo de vida. A intervenção partiu de uma análise ao excesso de mensagens publicitárias no quotidiano e à forma como estas contribuem para a normalização de comportamentos insustentáveis, sobretudo no contexto de consumo de combustíveis fósseis e da crise ambiental.\n\nInspirada por movimentos como os Subvertisers e os Brandalists, criei uma peça gráfica que subverte o layout habitual dos painéis de preços dos postos de combustível. No lugar dos valores de gasóleo e gasolina, a peça apresenta a mensagem “VAI DE BIKE”, composta com uma tipografia digital semelhante à usada nesses contextos. O design mantém as cores e estrutura gráfica originais — azul, amarelo e verde — para garantir imediata familiaridade visual, ao mesmo tempo que desafia a leitura esperada e promove uma reflexão direta e acessível sobre alternativas de mobilidade mais sustentáveis.\n\nA intervenção foi instalada num mupi urbano e fotografada no local (mockup), reforçando o seu impacto real e performativo. Este projeto desafiou-me a cruzar design gráfico, ativismo e consciência ambiental, assumindo o papel do designer enquanto agente interventivo na sociedade.",
     info_en:
@@ -80,6 +121,27 @@ export const projectsData = [
     notes: "'21",
     id: "000 000 000 002 511 21",
     image: "/assets/fotos/foto (1).png",
+    banner:
+      "/public/projects/06._“THIS_IS_A_MESS”/FW_Vinyl_Record_Mockup_copy_2.png",
+    images: [
+      "/public/projects/06._“THIS_IS_A_MESS”/1.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/2.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/22_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/33_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/44_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/55_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/66_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/77_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/bbb_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/ccc_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/hfjk_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/hhh_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/hjk_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/mmmm_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/nnnb_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/sss_copy.png",
+      "/public/projects/06._“THIS_IS_A_MESS”/vvv_copy.png",
+    ],
     info_pt:
       "Durante a licenciatura em Design Gráfico e Multimédia na ESAD.CR, desenvolvi um projeto dedicado à criação de capas de discos de vinil e à construção de um mockup original, feito a partir de uma fotografia real. O objetivo foi apresentar as capas de forma realista e apelativa.\n\nAs capas foram pensadas com uma abordagem autoral, alinhadas com o estilo musical dos artistas, explorando composição, cor e tipografia. O mockup foi desenvolvido para simular com precisão a presença física do vinil/cartaz em contexto expositivo ou digital.\n\nEste projeto permitiu-me reforçar competências em design editorial, direção de arte e edição de imagem, aliando técnica e criatividade na apresentação de produtos culturais.",
     info_en:
@@ -94,6 +156,8 @@ export const projectsData = [
     notes: "'25",
     id: "000 000 001 105 25",
     image: "/assets/fotos/foto (1).png",
+    banner: "/public/projects/07._PF_2025/4_copy.png",
+    images: ["/public/projects/07._PF_2025/6_copy.png"],
     info_pt:
       "Em 2025, fui responsável pela criação do cartaz e da identidade visual da festa da aldeia de Pescanseco Fundeiro, um pequeno lugar do interior português com uma comunidade fortemente enraizada nas tradições locais. Mais do que um cartaz, o projeto evoluiu para um sistema gráfico completo, pensado para comunicar o espírito da festa de forma autêntica, bem-humorada e próxima das pessoas da terra.\n\nDesenvolvi uma nova identidade visual que respeita as raízes da aldeia, mas que trouxe também um toque de renovação e dinamismo. Para o merchandising, recuperei elementos de camisolas e t-shirts de anos anteriores e integrei-os numa nova linha visual, criando continuidade entre o passado e o presente. A comunicação gráfica recorreu a expressões típicas das pessoas mais velhas da aldeia, dando ao projeto um tom bem-humorado, familiar e genuíno, facilmente reconhecido por quem vive ou visita Pescanseco.\n\nEste projeto permitiu-me aplicar design gráfico em contexto real e comunitário, explorando a ligação entre identidade, memória coletiva e celebração popular.",
     info_en:
@@ -108,6 +172,17 @@ export const projectsData = [
     notes: "'24",
     id: "000 000 002 306 24",
     image: "/assets/fotos/foto (1).png",
+    banner: "/public/projects/08._PF_2024/7.1_copy.png",
+    images: [
+      "/public/projects/08._PF_2024/4.2POST_copy_2.png",
+      "/public/projects/08._PF_2024/4.2POST_copy.png",
+      "/public/projects/08._PF_2024/4.3POST_copy.png",
+      "/public/projects/08._PF_2024/6.2POST_copy.png",
+      "/public/projects/08._PF_2024/7.1_copy.png",
+      "/public/projects/08._PF_2024/WhatsApp_Image_2023-07-08_at_13.49.53_copy.jpeg",
+      "/public/projects/08._PF_2024/WhatsApp_Image_2023-07-14_at_15.07.16_(1)_copy.jpeg",
+      "/public/projects/08._PF_2024/WhatsApp_Image_2023-07-14_at_15.07.16_copy.jpeg",
+    ],
     info_pt:
       "Em 2024, fui convidada a criar os cartazes da festa da aldeia de Pescanseco Fundeiro, dando início a uma colaboração que se repetiria no ano seguinte. Neste primeiro projeto, optei por construir uma linguagem visual intimista e afetiva, incorporando fotografias antigas de habitantes da aldeia, de familiares ou de pessoas que, de uma forma ou de outra, mantêm ligação com este lugar. O objetivo era valorizar a memória coletiva e criar um cartaz que despertasse reconhecimento e alguma emoção junto da comunidade.\n\nA composição gráfica foi pensada para equilibrar o lado visual contemporâneo com a estética das imagens antigas, respeitando de certa forma a textura, o enquadramento e a autenticidade dos registos fotográficos. A identidade do cartaz assentou numa abordagem mais complexa mas carregada de significado, tornando-se um ponto de partida para o reforço da ligação entre design e comunidade local.\n\nEste projeto marcou o início de uma relação contínua com Pescanseco Fundeiro e permitiu-me explorar o design gráfico como ferramenta de memória, afeto e celebração popular.",
     info_en:
@@ -122,6 +197,13 @@ export const projectsData = [
     notes: "'24",
     id: "000 000 002 008 24",
     image: "/assets/fotos/foto (1).png",
+    banner:
+      "/public/projects/09._Autumn_Beer_Festival_–_Vale_do_Peso/A4_-_10_copy.png",
+    images: [
+      "/public/projects/09._Autumn_Beer_Festival_–_Vale_do_Peso/A4_-_7_copy.png",
+      "/public/projects/09._Autumn_Beer_Festival_–_Vale_do_Peso/A4_-_9_copy.png",
+      "/public/projects/09._Autumn_Beer_Festival_–_Vale_do_Peso/Logotipo_final.png",
+    ],
     info_pt:
       "Em 2024, fui convidada a desenvolver uma proposta de logótipo e cartaz para o Autumn Beer Festival – Vale do Peso, um evento que celebra a cerveja artesanal, a música e o espírito comunitário no coração do Alentejo. A proposta procurou criar uma identidade visual simples mas distintiva, que transmitisse o carácter descontraído e autêntico do festival, com uma forte ligação ao imaginário da cerveja.\n\nO logótipo foi concebido para surgir integrado numa carica, remetendo de forma directa e visualmente eficaz ao universo da cerveja artesanal. Já o cartaz foi desenhado como se fosse um rótulo de cerveja, explorando o formato, a composição tipográfica e os elementos decorativos típicos desse tipo de embalagem, criando assim uma ligação imediata entre o conteúdo do evento e o seu design gráfico.",
     info_en:
@@ -136,6 +218,18 @@ export const projectsData = [
     notes: "'24",
     id: "000 000 001 703 24",
     image: "/assets/fotos/foto (1).png",
+    banner:
+      "/public/projects/10._Palheiro_by_J._Abade/Slide_16_9_-_10_copy.png",
+    images: [
+      "/public/projects/10._Palheiro_by_J._Abade/Asset_1@4x_copy.png",
+      "/public/projects/10._Palheiro_by_J._Abade/B_Frente_copy.png",
+      "/public/projects/10._Palheiro_by_J._Abade/B_Tras_copy.png",
+      "/public/projects/10._Palheiro_by_J._Abade/FRENTE_)1_copy.jpg",
+      "/public/projects/10._Palheiro_by_J._Abade/P_Frente_copy.png",
+      "/public/projects/10._Palheiro_by_J._Abade/P_Tras_copy.png",
+      "/public/projects/10._Palheiro_by_J._Abade/Slide_16_9_-_11_copy.png",
+      "/public/projects/10._Palheiro_by_J._Abade/tras_copy.tif",
+    ],
     info_pt:
       "Em 2024, criei a identidade gráfica para o Palheiro by J. Abade, uma proposta desenvolvida no contexto do Festival da Tubra, realizado em Vale do Peso. A imagem foi pensada para ser aplicada em t-shirts, funcionando como símbolo visual do evento e reforçando o ambiente de convívio e tradição que caracteriza esta celebração local.\n\nA proposta uniu dois elementos centrais: a “tasca” e a tubra, representando visualmente o espírito rústico e descontraído do festival. O logótipo combina garrafas, copos suspensos e a própria tubra numa composição estilizada a preto e branco, com um impacto gráfico forte e uma leitura imediata. A imagem foi aplicada de forma integrada nas t-shirts — tanto na frente como nas costas — criando um objeto visual coerente, marcante e alinhado com o tom informal e irreverente do evento.\n\nEste projeto permitiu-me cruzar a identidade visual, ilustração vetorial e design aplicado ao vestuário, explorando o potencial gráfico de símbolos culturais locais e da sua apropriação festiva.",
     info_en:
@@ -150,6 +244,16 @@ export const projectsData = [
     notes: "'21",
     id: "000 000 002 203 21",
     image: "/assets/fotos/foto (1).png",
+    banner: "/public/projects/11._KRIOLO/POSTER_copy.pdf",
+    images: [
+      "/public/projects/11._KRIOLO/CD_copy.pdf",
+      "/public/projects/11._KRIOLO/DENTRO_copy.png",
+      "/public/projects/11._KRIOLO/DIJIPACK_FINAL_copy.pdf",
+      "/public/projects/11._KRIOLO/FORA_branco_copy.png",
+      "/public/projects/11._KRIOLO/FORA_c_lombada_copy.png",
+      "/public/projects/11._KRIOLO/iiimsd__copy.png",
+      "/public/projects/11._KRIOLO/kkkkmsd__copy.png",
+    ],
     info_pt:
       "No âmbito da unidade curricular de Projeto de Design Gráfico II, desenvolvi o projeto Visual Listening, um exercício que propunha a representação gráfica de uma peça musical a partir de uma escuta atenta e analítica. O objetivo era traduzir visualmente, de forma concreta ou abstrata, uma seleção sonora, explorando ritmo, amplitude, textura, densidade e outros atributos do som como linguagem gráfica.\n\nEscolhi uma faixa musical e identifiquei um excerto de 30 segundos, sobre o qual construí uma partitura visual, aplicando formas gráficas e vetoriais sincronizadas com os elementos sonoros. A proposta incluiu também o design de um digipack, composto por capa, disco e booklet, desenvolvido com preocupações técnicas específicas como sobreposição de layers, marcações de corte, acabamento e cor. A imagem e o som fundiram-se num objeto visual que procura evocar a experiência auditiva de forma sensorial e sequencial.",
     info_en:
@@ -164,6 +268,40 @@ export const projectsData = [
     notes: "'24",
     id: "000 000 002 310 24",
     image: "/assets/fotos/foto (1).png",
+    banner:
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged).png",
+    images: [
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-01.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-02.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-03.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-04.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-05.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-06.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-07.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-08.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-09.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-10.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-11.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-12.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-13.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-14.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-15.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-16.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-17.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-18.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-19.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-20.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-21.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-22.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-23.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-24.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-25.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-26.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-27.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-28.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-29.png",
+      "/public/projects/12._TOCCO’S_PRESENTATION_IN_CHINA/China_Compressed_(dragged)-30.png",
+    ],
     url: "https://tocco.earth",
     info_pt:
       "Em 2024, colaborei com @anabeatrizalves no desenvolvimento gráfico de uma publicação institucional para a TOCCO, uma plataforma B2B sediada em Paris que promove a transição para materiais regenerativos e de baixo carbono através da tecnologia e da curadoria estratégica. Este projeto editorial foi desenvolvido especificamente para a apresentação internacional da TOCCO na China, integrada numa seleção de iniciativas de design e inovação em materiais sustentáveis.\n\nA publicação — com design editorial bilingue (inglês e mandarim) — teve como objetivo posicionar a TOCCO como um ecossistema global para materiais de nova geração, destacando os seus quatro pilares principais: marketplace, agência de inovação, centro de media e kits de amostras. A minha participação centrou-se na paginação, estruturação da informação, organização visual e refinamento de elementos gráficos, assegurando coerência com a identidade da marca e com o tom sofisticado exigido por um público internacional.\n\nEste projeto permitiu-me trabalhar num produto editorial exigente, que cruza design, sustentabilidade e inovação, concebido para uma rede global de designers, marcas e agentes transformadores na área dos materiais.",
@@ -179,8 +317,16 @@ export const projectsData = [
     notes: "'24",
     id: "000 000 002 310 24",
     image: "/assets/fotos/foto (1).png",
-    url:
-      "https://linktr.ee/K_AIZEN?fbclid=PAZXh0bgNhZW0CMTEAAacO3dLpS3BTLyo4GaTpoJJtmq1Oyu_K7-Cx0liZHTGzeh4lN9SkhlX04elGiw_aem_M3jZ0_pTICrncrJUvKPNcg",
+    banner: "/public/projects/13._KAIZEN/Lançamento_LX.jpeg",
+    images: [
+      "/public/projects/13._KAIZEN/1.jpg",
+      "/public/projects/13._KAIZEN/2.jpg",
+      "/public/projects/13._KAIZEN/3.jpg",
+      "/public/projects/13._KAIZEN/4.jpg",
+      "/public/projects/13._KAIZEN/5.jpg",
+      "/public/projects/13._KAIZEN/6.jpg",
+    ],
+    url: "https://linktr.ee/K_AIZEN?fbclid=PAZXh0bgNhZW0CMTEAAacO3dLpS3BTLyo4GaTpoJJtmq1Oyu_K7-Cx0liZHTGzeh4lN9SkhlX04elGiw_aem_M3jZ0_pTICrncrJUvKPNcg",
     info_pt:
       "Em 2024, no âmbito do Mestrado em Design de Comunicação da ESAD — Escola Superior de Artes e Design do Porto, desenvolvi em colaboração com Beatriz Soeiro o projeto editorial KAIZEN Vol. 01, sob coordenação de @andrecruz.studio e com o apoio de @studio_andrew_howard. Este é o primeiro volume de uma série de compilações de notícias que analisam criticamente dinâmicas políticas, sociais e culturais contemporâneas, com maior foco no jornal enquanto meio de comunicação.\n\nNeste volume inaugural, explorámos a controvérsia em torno da nova identidade visual da República Portuguesa, proposta pelo Studio Eduardo Aires, que serviu de ponto de partida para uma reflexão mais profunda sobre as chamadas “guerras ideológicas” em Portugal. Através deste projeto, reparámos como o design é palco simbólico de disputas políticas, e a forma como os media são utilizados para negociar poder e influenciar a sociedade.\n\nO sucesso do projeto em contexto académico levou-nos à sua produção em maior escala, com distribuição em espaços de referência como a Matéria Prima (Porto) e a Snob (Lisboa), estando também disponível por encomenda através do linktr.ee/K_AIZEN. Em Dezembro de 2024, realizámos dois lançamentos públicos, um no Porto e outro em Lisboa, reforçando a dimensão editorial e cultural do projeto.\n\nKAIZEN Vol. 01 afirma-se como um exercício de design crítico, edição e intervenção gráfica, posicionando o design editorial como ferramenta ativa de análise e comentário social.",
     info_en:
@@ -195,6 +341,24 @@ export const projectsData = [
     notes: "'25",
     id: "000 000 002 001 25",
     image: "/assets/fotos/foto (1).png",
+    banner: "/public/projects/14._TOCCO’S_POST/1.png",
+    images: [
+      "/public/projects/14._TOCCO’S_POST/2.png",
+      "/public/projects/14._TOCCO’S_POST/3.png",
+      "/public/projects/14._TOCCO’S_POST/4.png",
+      "/public/projects/14._TOCCO’S_POST/5.png",
+      "/public/projects/14._TOCCO’S_POST/6.png",
+      "/public/projects/14._TOCCO’S_POST/7.png",
+      "/public/projects/14._TOCCO’S_POST/8.png",
+      "/public/projects/14._TOCCO’S_POST/9.png",
+      "/public/projects/14._TOCCO’S_POST/10.png",
+      "/public/projects/14._TOCCO’S_POST/11.png",
+      "/public/projects/14._TOCCO’S_POST/12.png",
+      "/public/projects/14._TOCCO’S_POST/13.png",
+      "/public/projects/14._TOCCO’S_POST/14.png",
+      "/public/projects/14._TOCCO’S_POST/15.png",
+      "/public/projects/14._TOCCO’S_POST/16.png",
+    ],
     share: "https://tocco.earth",
     info_pt:
       "Em 2025, voltei a colaborar com a @anabeatrizalves num novo projeto para a TOCCO, desta vez dedicado à criação de conteúdos visuais para redes sociais, no contexto da comunicação do TOCCO Awards Trophy Partner. Este trabalho consistiu na produção de publicações digitais, focadas na apresentação e valorização do parceiro responsável pelo design e fabrico dos troféus dos TOCCO Awards.\n\nA proposta gráfica foi pensada para garantir coerência com a identidade visual da marca TOCCO, assegurando uma comunicação clara, elegante e ajustada às diferentes plataformas digitais. Embora de menor escala, este projeto exigiu atenção ao detalhe, respeito pela linguagem da marca e agilidade na execução — reforçando a continuidade de uma colaboração sólida com a equipa da TOCCO.",
