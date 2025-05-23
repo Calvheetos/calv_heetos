@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Footer } from "../components/footer";
 import { NavBar } from "../components/navBar";
-import poster from '../assets/fotos/foto (1).png'
 import { projectsData } from '../data/projects'
+import poster from '../assets/fotos/foto (1).png'
 
 export function Projects() {
     return (
@@ -19,10 +19,10 @@ export function Projects() {
                 {
                     projectsData.map((project, index) => (
                         <Link key={index} to={`/projects/${project.id}`} className="relative flex flex-col items-start justify-between w-full p-2 overflow-hidden aspect-square">
-                            <p className="text-white z-10 text-[12px] text-clip w-full h-fit">{project.title}</p>
+                            <p className="text-white z-10 text-[12px] text-clip w-full h-fit uppercase">{project.title}</p>
                             <p className="text-white z-10 text-[12px] text-clip w-full h-fit">{project.projectType.join(", ")}</p>
                             <p className="text-white z-10 text-[12px] text-clip w-full h-fit">{project.date}</p>
-                            <img src={project.image} alt={project.title} className="absolute top-0 left-0 w-full brightness-[40%] hover:brightness-[50%] transition-all duration-200" />
+                            <img src={project.banner ?? 'favicon.ico'} alt={project.title} className="absolute top-0 h-full bg-white bg-cover left-0 w-full brightness-[40%] hover:brightness-[50%] transition-all duration-200" />
                         </Link>
                     ))
                 }
