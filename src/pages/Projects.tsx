@@ -6,10 +6,10 @@ import poster from '../assets/fotos/foto (1).png'
 
 export function Projects() {
     return (
-        <div className='mt-16 w-[100vw] h-[100vh] overflow-x-hidden overflow-y-auto bg-black'>
+        <div className='w-full h-full min-h-screen overflow-x-hidden bg-black'>
             <NavBar />
             <div />
-            <div className="grid w-full h-auto gap-4 p-6 sm:grid-cols-[repeat(auto-fit,8rem)]">
+            <div className="grid w-full h-auto gap-4 p-6 sm:grid-cols-[repeat(auto-fit,8rem)] mt-16">
                 <Link key={1} to="/projects/map" className="relative flex flex-col items-start justify-between w-full p-2 overflow-hidden aspect-square">
                     <p className="text-white z-10 text-[12px] text-clip w-full h-fit">THE MAP IS NOT THE TERRITORY</p>
                     <p className="text-white z-10 text-[12px] text-clip w-full h-fit">ESAD </p>

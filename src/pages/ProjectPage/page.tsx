@@ -3,6 +3,7 @@ import { Project, projectsData } from '../../data/projects';
 import { useParams } from "react-router-dom";
 import { NavBar } from "../../components/navBar";
 import { Footer } from "../../components/footer";
+import ImageCarousel from "../../components/carousel-autoplay";
 
 export default function ProjectDetail() {
     const { id } = useParams<{ id: string }>();
@@ -23,20 +24,16 @@ export default function ProjectDetail() {
     }
 
     return (
-        <div className="flex flex-col h-[calc(100vh-7rem)] pt-20 overflow-y-auto md:flex-row">
+        <div className="flex flex-col w-full h-full pt-20 md:flex-row">
             <NavBar />
             <div className="flex flex-col w-full h-full md:flex-row">
                 {/* Left side - Image */}
-                <div className="relative w-full h-full md:w-1/2">
-                    <img src={project.banner} alt={project.title} className="object-cover w-full h-full" />
-                    {/* <div className="absolute bottom-0 left-0 z-10 p-6">
-                    <h1 className="inline-block px-2 py-1 text-5xl font-bold text-black md:text-7xl bg-white/80">
-                        {project.title}
-                    </h1>
-                    <div className="flex flex-col mt-4">
-                        <span className="font-bold text-red-600 text-7xl md:text-9xl">{project.notes.replace("'", "")}</span>
-                    </div>
-                </div> */}
+                <div className="w-full md:w-1/2">
+                    <ImageCarousel
+                        images={project.images?.length ? project.images : [project.banner ?? 'favicon.ico']}
+                        altPrefix={"Project Image"}
+                        interval={5000}
+                    />
                 </div>
 
                 {/* Right side - Information */}
@@ -134,7 +131,6 @@ export default function ProjectDetail() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
