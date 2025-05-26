@@ -10,6 +10,7 @@ export type Project = {
   images?: string[];
   banner?: string;
   url?: string;
+  linktree?: string;
   share?: string;
   info_pt: string;
   info_en: string;
@@ -27,7 +28,6 @@ export const projectsData: Project[] = [
     image: "/assets/fotos/foto (1).png",
     banner: "projects/01_MARINA_ABRAMOVIC/Frame_1.png",
     images: [
-      "projects/01_MARINA_ABRAMOVIC/Frame 1.png",
       "projects/01_MARINA_ABRAMOVIC/Frame 2.png",
       "projects/01_MARINA_ABRAMOVIC/Frame 3.png",
       "projects/01_MARINA_ABRAMOVIC/Frame 4.png",
@@ -301,7 +301,7 @@ export const projectsData: Project[] = [
       "projects/13_KAIZEN/Frame 71.png",
       "projects/13_KAIZEN/Frame 72.png",
     ],
-    url: "https://linktr.ee/K_AIZEN?fbclid=PAZXh0bgNhZW0CMTEAAacO3dLpS3BTLyo4GaTpoJJtmq1Oyu_K7-Cx0liZHTGzeh4lN9SkhlX04elGiw_aem_M3jZ0_pTICrncrJUvKPNcg",
+    linktree: "https://linktr.ee/K_AIZEN?fbclid=PAZXh0bgNhZW0CMTEAAacO3dLpS3BTLyo4GaTpoJJtmq1Oyu_K7-Cx0liZHTGzeh4lN9SkhlX04elGiw_aem_M3jZ0_pTICrncrJUvKPNcg",
     info_pt:
       "Em 2024, no âmbito do Mestrado em Design de Comunicação da ESAD — Escola Superior de Artes e Design do Porto, desenvolvi em colaboração com Beatriz Soeiro o projeto editorial KAIZEN Vol. 01, sob coordenação de @andrecruz.studio e com o apoio de @studio_andrew_howard. Este é o primeiro volume de uma série de compilações de notícias que analisam criticamente dinâmicas políticas, sociais e culturais contemporâneas, com maior foco no jornal enquanto meio de comunicação.\n\nNeste volume inaugural, explorámos a controvérsia em torno da nova identidade visual da República Portuguesa, proposta pelo Studio Eduardo Aires, que serviu de ponto de partida para uma reflexão mais profunda sobre as chamadas “guerras ideológicas” em Portugal. Através deste projeto, reparámos como o design é palco simbólico de disputas políticas, e a forma como os media são utilizados para negociar poder e influenciar a sociedade.\n\nO sucesso do projeto em contexto académico levou-nos à sua produção em maior escala, com distribuição em espaços de referência como a Matéria Prima (Porto) e a Snob (Lisboa), estando também disponível por encomenda através do linktr.ee/K_AIZEN. Em Dezembro de 2024, realizámos dois lançamentos públicos, um no Porto e outro em Lisboa, reforçando a dimensão editorial e cultural do projeto.\n\nKAIZEN Vol. 01 afirma-se como um exercício de design crítico, edição e intervenção gráfica, posicionando o design editorial como ferramenta ativa de análise e comentário social.",
     info_en:
