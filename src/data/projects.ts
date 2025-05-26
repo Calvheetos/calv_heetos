@@ -9,9 +9,7 @@ export type Project = {
   image: string;
   images?: string[];
   banner?: string;
-  url?: string;
-  linktree?: string;
-  share?: string;
+  links?: Record<string, string>;
   info_pt: string;
   info_en: string;
 };
@@ -74,7 +72,9 @@ export const projectsData: Project[] = [
     notes: "'23",
     id: "000 000 000 401 23",
     image: "/assets/fotos/foto (1).png",
-    share: "Adicionar link para o site da BB e para o Site da ROOT",
+    links: {
+      website: "https://rootkey.ai/",
+    },
     info_pt:
       "No início do meu estágio curricular na empresa Blendbyte, em 2023, fui desafiada a desenvolver o branding para uma nova marca na área da cibersegurança: a ROOTKey. Este projeto revelou-se um dos mais exigentes da minha formação até à data, não só pela complexidade do tema, com o qual inicialmente tinha pouca familiaridade, mas também pela responsabilidade de criar uma identidade forte e diferenciadora num sector altamente técnico e competitivo.\n\nO processo começou com uma fase intensa de investigação sobre conceitos-chave da cibersegurança e sobre o posicionamento estratégico da ROOTKey, uma empresa focada em soluções de segurança digital e proteção de dados. Com base nesse conhecimento, desenvolvi a identidade visual da marca, procurando traduzir graficamente os valores de confiança, tecnologia e inovação. A proposta incluiu o design do logótipo, definição da paleta cromática, escolha tipográfica, bem como aplicações para suportes digitais e institucionais. Este projeto exigiu uma comunicação constante com o cliente, e uma abordagem estratégica e sensível ao detalhe.",
     info_en:
@@ -89,7 +89,9 @@ export const projectsData: Project[] = [
     notes: "'23",
     id: "000 000 000 303 23",
     image: "/assets/fotos/foto (1).png",
-    share: "Adicionar link para o site da BB",
+    links: {
+      website: "https://blendbyte.pt/",
+    },
     info_pt:
       "Pouco depois de ter iniciado o desenvolvimento da identidade visual da ROOTKey, fui desafiada a criar uma proposta de rebranding para a própria Blendbyte, a agência onde estava a realizar o meu estágio curricular. Este convite surgiu da vontade da equipa em explorar uma nova linguagem visual mais alinhada com o posicionamento atual da marca e com a sua evolução enquanto empresa criativa especializada em branding, marketing digital e produção de conteúdos.\n\nA proposta partiu de uma análise crítica à identidade existente, considerando a maturidade da empresa, os seus valores, público-alvo e presença digital. Desenvolvi um conceito gráfico renovado que procurava reforçar a personalidade jovem, criativa e estratégica da Blendbyte, propondo um novo logótipo, sistema visual, cores, tipografia e aplicações em diferentes suportes — desde redes sociais e website até materiais institucionais e merch. Este projeto foi particularmente desafiante por se tratar de uma marca com a qual já estava diretamente envolvida enquanto colaboradora, exigindo distanciamento crítico, capacidade de escuta e uma abordagem conceptual sólida.",
     info_en:
@@ -239,7 +241,7 @@ export const projectsData: Project[] = [
     notes: "'21",
     id: "000 000 002 203 21",
     image: "/assets/fotos/foto (1).png",
-    banner: "projects/11_KRIOLO/POSTER copy.pdf",
+    banner: "projects/11_KRIOLO/DENTRO copy.png",
     images: [
       "projects/11_KRIOLO/CD copy.pdf",
       "projects/11_KRIOLO/DENTRO copy.png",
@@ -261,7 +263,7 @@ export const projectsData: Project[] = [
     collaborators: ["@anabeatrizalves"],
     tags: ["BOOKLET", "PRESS", "TOCCO", "2024"],
     notes: "'24",
-    id: "000 000 002 310 24",
+    id: "000 000 002 310 245",
     image: "/assets/fotos/foto (1).png",
     banner: "projects/12_TOCCOS_PRESENTATION_IN_CHINA/Frame 56.png",
     images: [
@@ -276,7 +278,9 @@ export const projectsData: Project[] = [
       "projects/12_TOCCOS_PRESENTATION_IN_CHINA/Frame 64.png",
       "projects/12_TOCCOS_PRESENTATION_IN_CHINA/Frame 65.png",
     ],
-    url: "https://tocco.earth",
+    links: {
+      website: "https://www.tocco.io/",
+    },
     info_pt:
       "Em 2024, colaborei com @anabeatrizalves no desenvolvimento gráfico de uma publicação institucional para a TOCCO, uma plataforma B2B sediada em Paris que promove a transição para materiais regenerativos e de baixo carbono através da tecnologia e da curadoria estratégica. Este projeto editorial foi desenvolvido especificamente para a apresentação internacional da TOCCO na China, integrada numa seleção de iniciativas de design e inovação em materiais sustentáveis.\n\nA publicação — com design editorial bilingue (inglês e mandarim) — teve como objetivo posicionar a TOCCO como um ecossistema global para materiais de nova geração, destacando os seus quatro pilares principais: marketplace, agência de inovação, centro de media e kits de amostras. A minha participação centrou-se na paginação, estruturação da informação, organização visual e refinamento de elementos gráficos, assegurando coerência com a identidade da marca e com o tom sofisticado exigido por um público internacional.\n\nEste projeto permitiu-me trabalhar num produto editorial exigente, que cruza design, sustentabilidade e inovação, concebido para uma rede global de designers, marcas e agentes transformadores na área dos materiais.",
     info_en:
@@ -289,7 +293,7 @@ export const projectsData: Project[] = [
     collaborators: ["@___.___beatriz"],
     tags: ["BOOKLET", "PRESS", "TOCCO", "2024"],
     notes: "'24",
-    id: "000 000 002 310 24",
+    id: "000 000 001 910 24",
     image: "/assets/fotos/foto (1).png",
     banner: "projects/13_KAIZEN/Frame 66.png",
     images: [
@@ -301,7 +305,9 @@ export const projectsData: Project[] = [
       "projects/13_KAIZEN/Frame 71.png",
       "projects/13_KAIZEN/Frame 72.png",
     ],
-    linktree: "https://linktr.ee/K_AIZEN?fbclid=PAZXh0bgNhZW0CMTEAAacO3dLpS3BTLyo4GaTpoJJtmq1Oyu_K7-Cx0liZHTGzeh4lN9SkhlX04elGiw_aem_M3jZ0_pTICrncrJUvKPNcg",
+    links: {
+      linktree: "https://linktr.ee/K_AIZEN?fbclid=PAZXh0bgNhZW0CMTEAAacO3dLpS3BTLyo4GaTpoJJtmq1Oyu_K7-Cx0liZHTGzeh4lN9SkhlX04elGiw_aem_M3jZ0_pTICrncrJUvKPNcg",
+    },
     info_pt:
       "Em 2024, no âmbito do Mestrado em Design de Comunicação da ESAD — Escola Superior de Artes e Design do Porto, desenvolvi em colaboração com Beatriz Soeiro o projeto editorial KAIZEN Vol. 01, sob coordenação de @andrecruz.studio e com o apoio de @studio_andrew_howard. Este é o primeiro volume de uma série de compilações de notícias que analisam criticamente dinâmicas políticas, sociais e culturais contemporâneas, com maior foco no jornal enquanto meio de comunicação.\n\nNeste volume inaugural, explorámos a controvérsia em torno da nova identidade visual da República Portuguesa, proposta pelo Studio Eduardo Aires, que serviu de ponto de partida para uma reflexão mais profunda sobre as chamadas “guerras ideológicas” em Portugal. Através deste projeto, reparámos como o design é palco simbólico de disputas políticas, e a forma como os media são utilizados para negociar poder e influenciar a sociedade.\n\nO sucesso do projeto em contexto académico levou-nos à sua produção em maior escala, com distribuição em espaços de referência como a Matéria Prima (Porto) e a Snob (Lisboa), estando também disponível por encomenda através do linktr.ee/K_AIZEN. Em Dezembro de 2024, realizámos dois lançamentos públicos, um no Porto e outro em Lisboa, reforçando a dimensão editorial e cultural do projeto.\n\nKAIZEN Vol. 01 afirma-se como um exercício de design crítico, edição e intervenção gráfica, posicionando o design editorial como ferramenta ativa de análise e comentário social.",
     info_en:
@@ -314,7 +320,7 @@ export const projectsData: Project[] = [
     collaborators: ["@anabeatrizalves"],
     tags: ["POST", "TOCCO", "2025"],
     notes: "'25",
-    id: "000 000 002 001 25",
+    id: "000 000 002 310 24",
     image: "/assets/fotos/foto (1).png",
     banner: "projects/14_TOCCOS_POST/Frame 1.png",
     images: [
@@ -334,7 +340,9 @@ export const projectsData: Project[] = [
       "projects/14_TOCCOS_POST/Frame 85.png",
       "projects/14_TOCCOS_POST/Frame 86.png",
     ],
-    share: "https://tocco.earth",
+    links: {
+      website: "https://tocco.earth",
+    },
     info_pt:
       "Em 2025, voltei a colaborar com a @anabeatrizalves num novo projeto para a TOCCO, desta vez dedicado à criação de conteúdos visuais para redes sociais, no contexto da comunicação do TOCCO Awards Trophy Partner. Este trabalho consistiu na produção de publicações digitais, focadas na apresentação e valorização do parceiro responsável pelo design e fabrico dos troféus dos TOCCO Awards.\n\nA proposta gráfica foi pensada para garantir coerência com a identidade visual da marca TOCCO, assegurando uma comunicação clara, elegante e ajustada às diferentes plataformas digitais. Embora de menor escala, este projeto exigiu atenção ao detalhe, respeito pela linguagem da marca e agilidade na execução — reforçando a continuidade de uma colaboração sólida com a equipa da TOCCO.",
     info_en:

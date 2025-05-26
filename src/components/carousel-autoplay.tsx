@@ -63,7 +63,7 @@ export default function ImageCarousel({
               <img
                 src={`/calv_heetos/${src}`}
                 alt={`${altPrefix} ${index + 1}`}
-                className="object-contain transition-transform rounded-lg aspect-square"
+                className="object-cover transition-transform"
               />
             </CarouselItem>
           ))}

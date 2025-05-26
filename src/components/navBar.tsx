@@ -31,7 +31,7 @@ export function NavBar() {
                 <Link to={`/`}>About</Link>
                 <Link to={`/projects`}>Projects</Link>
             </div>
-            <p className={`${IsProjectsRoute() ? "text-white" : " text-black"}`}>{currentDate}</p>
+            <p className={`hidden sm:flex ${IsProjectsRoute() ? "text-white" : " text-black"}`}>{currentDate}</p>
         </nav>
     );
 }
