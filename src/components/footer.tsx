@@ -8,11 +8,10 @@ export function Footer() {
     <footer className={`${IsProjectsRoute() ? "bg-black" : " bg-white"}  h-auto px-6 py-4 flex justify-between absolute bottom-0 left-0 w-full items-end overflow-hidden`}>
       <nav className={`grid grid-cols-3 gap-x-3 gap-y-1 ${IsProjectsRoute() ? "text-white" : " text-black"}`}>
         <a href="/calv_heetos">Calv_Heetos</a>
-        <a href="mailto:">Email</a>
-        <a href="">Linkedin</a>
-        <p>Graphic Designer</p>
-        <a href="">Instagram</a>
-        <a href="">Behance</a>
+        <a href="mailto:carlottalves@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/carlotaalves/">Linkedin</a>
+        <a href="/calv_heetos">Graphic Designer</a>
+        <a href="https://www.instagram.com/calv_heetos">Instagram</a>
       </nav>
       <nav className="flex flex-col items-end justify-end gap-3">
         {IsProjectsRoute() ? null : <Link to={`/projects`}>Check out to what I’ve done!!</Link>}
