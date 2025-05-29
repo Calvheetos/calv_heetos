@@ -6,15 +6,33 @@ export type Project = {
   tags: string[];
   notes: string;
   id: string;
-  image: string;
   images?: string[];
   banner?: string;
   links?: Record<string, string>;
+  priority?: number;
+  href?: string;
   info_pt: string;
   info_en: string;
 };
 
 export const projectsData: Project[] = [
+    {
+    title: "THE MAP IS NOT THE TERRITORY",
+    projectType: ["ESAD"],
+    date: "02 | 2024",
+    collaborators: [""],
+    href: "/projects/map",
+    tags: [],
+    notes: "'21",
+    id: "0001",
+    banner: "projects/00_MAP/banner.png",
+    priority: 7,
+    images: [
+
+    ],
+    info_pt: "",
+    info_en: "",
+  },
   {
     title: "Marina Abramovic",
     projectType: ["VISUAL IDENTITY"],
@@ -23,8 +41,8 @@ export const projectsData: Project[] = [
     tags: ["MARINA ABRAMOVIC", "IDENTITY", "ESAD.CR", "2021"],
     notes: "'21",
     id: "000 000 000 305 21",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/01_MARINA_ABRAMOVIC/Frame_1.png",
+    priority: 1,
     images: [
       "projects/01_MARINA_ABRAMOVIC/Frame 2.png",
       "projects/01_MARINA_ABRAMOVIC/Frame 3.png",
@@ -48,7 +66,6 @@ export const projectsData: Project[] = [
     tags: ["FESTIVAL IMPULSO", "IDENTITY", "ESAD.CR", "2022"],
     notes: "'22",
     id: "000 000 000 000 22",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/02_FESTIVAL_IMPULSO/Hpreto copy.png",
     images: [
       "projects/02_FESTIVAL_IMPULSO/credenciais final copy.png",
@@ -71,10 +88,40 @@ export const projectsData: Project[] = [
     tags: ["ROOTKEY", "IDENTITY", "BRANDING", "BLENDBYTE", "2023"],
     notes: "'23",
     id: "000 000 000 401 23",
-    image: "/assets/fotos/foto (1).png",
     links: {
       website: "https://rootkey.ai/",
     },
+    banner: "projects/03_ROOTKEY/CapaReels_16_04_25.png",
+    images: [
+      "projects/03_ROOTKEY/02_05_25.png",
+      "projects/03_ROOTKEY/12_03_25-1.png",
+      "projects/03_ROOTKEY/12_03_25-2.png",
+      "projects/03_ROOTKEY/12_03_25-3.png",
+      "projects/03_ROOTKEY/12_03_25.png",
+      "projects/03_ROOTKEY/15_04_25-1.png",
+      "projects/03_ROOTKEY/15_04_25.png",
+      "projects/03_ROOTKEY/26_02_25-1.png",
+      "projects/03_ROOTKEY/26_02_25-2.png",
+      "projects/03_ROOTKEY/26_02_25-3.png",
+      "projects/03_ROOTKEY/26_02_25-4.png",
+      "projects/03_ROOTKEY/26_02_25-5.png",
+      "projects/03_ROOTKEY/26_02_25-6.png",
+      "projects/03_ROOTKEY/26_02_25-7.png",
+      "projects/03_ROOTKEY/26_02_25-8.png",
+      "projects/03_ROOTKEY/26_02_25-9.png",
+      "projects/03_ROOTKEY/26_02_25-10.png",
+      "projects/03_ROOTKEY/26_02_25-11.png",
+      "projects/03_ROOTKEY/26_02_25-12.png",
+      "projects/03_ROOTKEY/26_02_25-13.png",
+      "projects/03_ROOTKEY/26_02_25.png",
+      "projects/03_ROOTKEY/29_04_25.png",
+      "projects/03_ROOTKEY/CapaReels_16_04_25.png",
+      "projects/03_ROOTKEY/Post Alemanha - Final-1.png",
+      "projects/03_ROOTKEY/Post Alemanha - Final.png",
+      "projects/03_ROOTKEY/Post_22_04_25.png",
+      "projects/03_ROOTKEY/Post_27_05_25-1.png",
+      "projects/03_ROOTKEY/Post1_usecase_Vodafone.png"
+    ],
     info_pt:
       "No início do meu estágio curricular na empresa Blendbyte, em 2023, fui desafiada a desenvolver o branding para uma nova marca na área da cibersegurança: a ROOTKey. Este projeto revelou-se um dos mais exigentes da minha formação até à data, não só pela complexidade do tema, com o qual inicialmente tinha pouca familiaridade, mas também pela responsabilidade de criar uma identidade forte e diferenciadora num sector altamente técnico e competitivo.\n\nO processo começou com uma fase intensa de investigação sobre conceitos-chave da cibersegurança e sobre o posicionamento estratégico da ROOTKey, uma empresa focada em soluções de segurança digital e proteção de dados. Com base nesse conhecimento, desenvolvi a identidade visual da marca, procurando traduzir graficamente os valores de confiança, tecnologia e inovação. A proposta incluiu o design do logótipo, definição da paleta cromática, escolha tipográfica, bem como aplicações para suportes digitais e institucionais. Este projeto exigiu uma comunicação constante com o cliente, e uma abordagem estratégica e sensível ao detalhe.",
     info_en:
@@ -87,8 +134,19 @@ export const projectsData: Project[] = [
     collaborators: ["@BLENDBYTE"],
     tags: ["BLENDBYTE", "IDENTITY", "REBRANDING", "2023"],
     notes: "'23",
+    priority: 5,
     id: "000 000 000 303 23",
-    image: "/assets/fotos/foto (1).png",
+    banner: "projects/04_BB/5.1.png",
+    images: [
+      "projects/04_BB/4.png",
+      "projects/04_BB/5.1.png",
+      "projects/04_BB/6.png",
+      "projects/04_BB/8f50a18b0e4c48846678104f9662b0470559.png",
+      "projects/04_BB/Exemplo 36.png",
+      "projects/04_BB/Exemplo 37.png",
+      "projects/04_BB/O Cubo na cidade-1.png",
+      "projects/04_BB/O Cubo na cidade.png"
+    ],
     links: {
       website: "https://blendbyte.pt/",
     },
@@ -105,7 +163,6 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "REBRANDING", "ESAD.CR", "2021"],
     notes: "'21",
     id: "000 000 000 002 511 21",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/05_CLIMATE_CHANGE/final mupi-02 copy.png",
     images: [
       "projects/05_CLIMATE_CHANGE/2mockup copy.png",
@@ -124,7 +181,6 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "REBRANDING", "ESAD.CR", "2021"],
     notes: "'21",
     id: "000 000 000 002 511 21",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/06_THIS_IS_A_MESS/Frame 23.png",
     images: [
       "projects/06_THIS_IS_A_MESS/Frame 23.png",
@@ -149,7 +205,6 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "POSTER", "TERRINHA", "2025"],
     notes: "'25",
     id: "000 000 001 105 25",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/07_PF_2025/4 copy.png",
     images: [
       "projects/07_PF_2025/6 copy.png",
@@ -170,7 +225,6 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "POSTER", "TERRINHA", "2024"],
     notes: "'24",
     id: "000 000 002 306 24",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/08_PF_2024/Frame 41.png",
     images: [
       "projects/08_PF_2024/Frame 35.png",
@@ -193,8 +247,8 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "POSTER", "VALE DO PESO", "2024"],
     notes: "'24",
     id: "000 000 002 008 24",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/09_Autumn_Beer_Festival/Frame 42(1).png",
+    priority: 6,
     images: [
       "projects/09_Autumn_Beer_Festival/Frame 42(1).png",
       "projects/09_Autumn_Beer_Festival/Frame 43(1).png",
@@ -215,8 +269,8 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "POSTER", "VALE DO PESO", "2024"],
     notes: "'24",
     id: "000 000 001 703 24",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/10_Palheiro/Slide 16_9 - 10 copy.png",
+    priority: 8,
     images: [
       "projects/10_Palheiro/Asset 1@4x copy.png",
       "projects/10_Palheiro/B_Frente copy.png",
@@ -240,8 +294,8 @@ export const projectsData: Project[] = [
     tags: ["A.D.", "POSTER", "KRIOLO", "2021"],
     notes: "'21",
     id: "000 000 002 203 21",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/11_KRIOLO/DENTRO copy.png",
+    priority: 2,
     images: [
       "projects/11_KRIOLO/CD copy.pdf",
       "projects/11_KRIOLO/DENTRO copy.png",
@@ -264,8 +318,8 @@ export const projectsData: Project[] = [
     tags: ["BOOKLET", "PRESS", "TOCCO", "2024"],
     notes: "'24",
     id: "000 000 002 310 245",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/12_TOCCOS_PRESENTATION_IN_CHINA/Frame 56.png",
+    priority: 3,
     images: [
       "projects/12_TOCCOS_PRESENTATION_IN_CHINA/Frame 56.png",
       "projects/12_TOCCOS_PRESENTATION_IN_CHINA/Frame 57.png",
@@ -294,8 +348,8 @@ export const projectsData: Project[] = [
     tags: ["BOOKLET", "PRESS", "TOCCO", "2024"],
     notes: "'24",
     id: "000 000 001 910 24",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/13_KAIZEN/Frame 66.png",
+    priority: 1,
     images: [
       "projects/13_KAIZEN/Frame 66.png",
       "projects/13_KAIZEN/Frame 67.png",
@@ -321,7 +375,6 @@ export const projectsData: Project[] = [
     tags: ["POST", "TOCCO", "2025"],
     notes: "'25",
     id: "000 000 002 310 24",
-    image: "/assets/fotos/foto (1).png",
     banner: "projects/14_TOCCOS_POST/Frame 1.png",
     images: [
       "projects/14_TOCCOS_POST/Frame 1.png",

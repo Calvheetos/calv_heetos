@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Footer } from "../components/footer";
 import { NavBar } from "../components/navBar";
 import { projectsData } from '../data/projects';
-import poster from '../assets/fotos/foto (1).png';
 
 type ProjectProps = {
     to: string;
@@ -11,6 +10,7 @@ type ProjectProps = {
     date: string;
     banner: string;
     alt: string;
+    href?: string;
 };
 
 function Project({ to, title, projectType, date, banner, alt }: ProjectProps) {
@@ -35,18 +35,10 @@ export function Projects() {
         <div className='w-full h-full min-h-screen justify-between flex flex-col overflow-x-hidden bg-black'>
             <NavBar />
             <div className="grid w-full h-full gap-4 p-6 sm:grid-cols-[repeat(auto-fit,8rem)] mt-16">
-                <Project
-                    to="/projects/map"
-                    title="THE MAP IS NOT THE TERRITORY"
-                    projectType="ESAD"
-                    date="02 | 2024"
-                    banner={poster}
-                    alt="THE MAP IS NOT THE TERRITORY"
-                />
                 {projectsData.map((project, index) => (
                     <Project
                         key={project.id ?? index}
-                        to={`/projects/${project.id}`}
+                        to={project.href ? project.href : `/projects/${project.id}`}
                         title={project.title}
                         projectType={project.projectType}
                         date={project.date}
