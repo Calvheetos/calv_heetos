@@ -12,26 +12,33 @@ export function Home() {
     }
   };
   return (
-    <div onMouseMove={handleMouseMove} className='w-[100vw] h-[100vh] overflow-hidden cursor-none'>
-      <NavBar/>
+    <div onMouseMove={handleMouseMove} className='w-full min-h-screen h-full cursor-none flex flex-col justify-between'>
+      <NavBar />
       <div
         id="custom-cursor"
         style={{
           position: 'absolute',
-          width: '40px', 
-          height: '40px', 
-          backgroundImage: `url(${cursor})`, 
+          width: '40px',
+          height: '40px',
+          backgroundImage: `url(${cursor})`,
           backgroundSize: 'cover',
-          pointerEvents: 'none', 
+          pointerEvents: 'none',
           zIndex: "999"
         }}
       />
-      <div className="px-12 py-3 flex flex-col gap-1 mt-16 w-full h-full">
-        <p>Hey! My name is Carlota Alves and I'm a graphic designer based in Lisbon, Portugal.</p>
-        <p>I'm here and ready to help! </p>
-        <p>Together, we're like peanut butter and jelly, an unbeatable combo!</p>
+      <div className="pt-20 w-full h-full min-h-[50vh] container mx-auto max-w-5xl lg:px-0 px-[8vw] flex justify-center items-center flex-col">
+        <div className='w-full flex justify-start'>
+          <p className='text-[3rem] sm:text-[4rem] lg:text-[7rem]'>HELLO, I'M</p>
+        </div>
+        <div className='flex items-end w-full flex-col lg:leading-[7rem] leading-[5rem]'>
+          <p className='text-[3rem] sm:text-[4rem] lg:text-[7rem]'>CARLOTA</p>
+          <p className='sm:tracking-[5px] tracking-[2px] text-sm lg:text-md lg:tracking-[14px]'>I'M JUST THE DESIGNER</p>
+        </div>
+        <div className='flex justify-center text-center'>
+          <p className='text-[3rem] sm:text-[4rem] lg:text-[7rem]'>ALVES</p>
+        </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
