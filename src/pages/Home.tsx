@@ -12,7 +12,7 @@ export function Home() {
     }
   };
   return (
-    <div onMouseMove={handleMouseMove} className='w-full min-h-screen h-full cursor-none flex flex-col justify-between'>
+    <div onMouseMove={handleMouseMove} className='relative w-full min-h-screen h-full cursor-none flex flex-col justify-between'>
       <NavBar />
       <div
         id="custom-cursor"
@@ -26,7 +26,14 @@ export function Home() {
           zIndex: "999"
         }}
       />
-      <div className="pt-20 w-full h-full min-h-[50vh] container mx-auto max-w-5xl lg:px-0 px-[8vw] flex justify-center items-center flex-col">
+      <div className='absolute top-16 left-1/2 -translate-1/2'>
+        <p className='sm:max-w-[25rem] max-w-[18rem] text-[.65rem] uppercase'>
+          An ever-growing collection of references and tools
+          for designers. Curated by Julien Van Havere, founder
+          of DesignPractice™ and TypeFoundry™.
+        </p>
+      </div>
+      <div className="pt-28 w-full h-full min-h-[50vh] container mx-auto max-w-5xl lg:px-0 px-[8vw] flex justify-center items-center flex-col">
         <div className='w-full flex justify-start'>
           <p className='text-[3rem] sm:text-[4rem] lg:text-[7rem]'>HELLO, I'M</p>
         </div>

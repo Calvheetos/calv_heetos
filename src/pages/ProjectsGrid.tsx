@@ -12,26 +12,27 @@ type ProjectProps = {
     banner: string;
     alt: string;
     date?: string;
+    style?: string;
 };
 
 export default function ProjectsGrid() {
 
     const sortedProjects = projectsData.sort((a, b) => {
-        const priorityA = a.priority || 0;
-        const priorityB = b.priority || 0;
+        const priorityA = a.priority || 1000;
+        const priorityB = b.priority || 1000;
         if (priorityA !== priorityB) {
             return priorityA - priorityB;
         }
         return new Date(b.date || '').getTime() - new Date(a.date || '').getTime();
     });
 
-    function Project({ to, id, collaborators, projectType, tags, banner, date, alt }: ProjectProps) {
+    function Project({ to, id, collaborators, projectType, tags, banner, date, alt, style }: ProjectProps) {
         return (
             <Link to={to} className="relative flex flex-col w-full group gap-2">
                 <img
                     src={banner}
                     alt={alt}
-                    className=''
+                    className={style}
                 />
                 <div className='text-[.7rem] leading-[12px]'>
                     <p className="uppercase">{Array.isArray(projectType) ? projectType.join(", ") : projectType} /
@@ -64,6 +65,7 @@ export default function ProjectsGrid() {
                                 banner={project.banner || ""}
                                 alt={project.title}
                                 date={project.date}
+                                style={project.style}
                             />
                         ))}
                 </div>
@@ -71,7 +73,7 @@ export default function ProjectsGrid() {
                 <div className='flex flex-col gap-4 lg:col-span-2 col-span-1'>
                     <div className="flex flex-col lg:flex-row gap-4">
                         {sortedProjects
-                            .filter(project => project.id === "000 000 002 203 21" || project.id === "000 000 002 310 245")
+                            .filter(project => project.id === "000 000 002 310 245" || project.id === "000 000 002 203 21")
                             .map(project => (
                                 <Project
                                     key={project.id}
@@ -83,6 +85,7 @@ export default function ProjectsGrid() {
                                     banner={project.banner || ""}
                                     alt={project.title}
                                     date={project.date}
+                                    style={project.style}
                                 />
                             ))}
                     </div>
@@ -100,12 +103,13 @@ export default function ProjectsGrid() {
                                     banner={project.banner || ""}
                                     alt={project.title}
                                     date={project.date}
+                                    style={project.style}
                                 />
                             ))}
                     </div>
                     <div className="flex flex-col lg:flex-row gap-4">
                         {sortedProjects
-                            .filter(project => project.id === "000 000 002 310 24" || project.id === "000 000 002 203 21")
+                            .filter(project => project.id === "000 000 000 002 511 21" || project.id === "000 000 002 310 24")
                             .map(project => (
                                 <Project
                                     key={project.id}
@@ -117,6 +121,7 @@ export default function ProjectsGrid() {
                                     banner={project.banner || ""}
                                     alt={project.title}
                                     date={project.date}
+                                    style={project.style}
                                 />
                             ))}
                     </div>
@@ -124,7 +129,7 @@ export default function ProjectsGrid() {
 
                 <div className='flex flex-col gap-4 col-span-1'>
                     {sortedProjects
-                        .filter(project => project.id === "000 000 002 310 24" || project.id === "000 000 001 703 24" || project.id === "000 000 002 203 21" || project.id === "000 000 000 305 21")
+                        .filter(project => project.id === "000 000 000 401 23" || project.id === "000 000 001 703 24" || project.id === "000 000 000 305 21")
                         .map(project => (
                             <Project
                                 key={project.id}
@@ -136,6 +141,7 @@ export default function ProjectsGrid() {
                                 banner={project.banner || ""}
                                 alt={project.title}
                                 date={project.date}
+                                style={project.style}
                             />
                         ))}
                 </div>
@@ -155,6 +161,7 @@ export default function ProjectsGrid() {
                                 banner={project.banner || ""}
                                 alt={project.title}
                                 date={project.date}
+                                style={project.style}
                             />
                         ))}
                 </div>

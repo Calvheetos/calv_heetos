@@ -29,7 +29,7 @@ export function NavBar() {
         <nav className={`h-16 px-6 py-4 flex justify-between absolute top-0 left-0 w-full overflow-hidden ${IsProjectsRoute() ? "bg-black" : " bg-white"}`}>
             <div className={`flex gap-5 ${IsProjectsRoute() ? "text-white" : " text-black"}`}>
                 <Link to={`/`}>About</Link>
-                <Link to={`/projects`}>Projects</Link>
+                <Link to={`/projects-grid`}>Projects</Link>
             </div>
             <p className={`hidden sm:flex ${IsProjectsRoute() ? "text-white" : " text-black"}`}>{currentDate}</p>
         </nav>

@@ -13,6 +13,7 @@ export type Project = {
   href?: string;
   info_pt: string;
   info_en: string;
+  style?: string;
 };
 
 export const projectsData: Project[] = [
@@ -41,8 +42,9 @@ export const projectsData: Project[] = [
     tags: ["MARINA ABRAMOVIC", "IDENTITY", "ESAD.CR", "2021"],
     notes: "'21",
     id: "000 000 000 305 21",
+    priority: 30,
+    style: "max-h-[12rem] object-cover",
     banner: "projects/01_MARINA_ABRAMOVIC/Frame_1.png",
-    priority: 1,
     images: [
       "projects/01_MARINA_ABRAMOVIC/Frame 2.png",
       "projects/01_MARINA_ABRAMOVIC/Frame 3.png",
@@ -66,6 +68,7 @@ export const projectsData: Project[] = [
     tags: ["FESTIVAL IMPULSO", "IDENTITY", "ESAD.CR", "2022"],
     notes: "'22",
     id: "000 000 000 000 22",
+    priority: 30,
     banner: "projects/02_FESTIVAL_IMPULSO/Hpreto copy.png",
     images: [
       "projects/02_FESTIVAL_IMPULSO/credenciais final copy.png",
@@ -91,6 +94,8 @@ export const projectsData: Project[] = [
     links: {
       website: "https://rootkey.ai/",
     },
+    priority: 4,
+    style: "max-h-[7rem] object-cover",
     banner: "projects/03_ROOTKEY/CapaReels_16_04_25.png",
     images: [
       "projects/03_ROOTKEY/02_05_25.png",
@@ -162,7 +167,7 @@ export const projectsData: Project[] = [
     collaborators: [],
     tags: ["IDENTITY", "REBRANDING", "ESAD.CR", "2021"],
     notes: "'21",
-    id: "000 000 000 002 511 21",
+    id: "000 000 000 002 511 22",
     banner: "projects/05_CLIMATE_CHANGE/final mupi-02 copy.png",
     images: [
       "projects/05_CLIMATE_CHANGE/2mockup copy.png",
@@ -181,7 +186,7 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "REBRANDING", "ESAD.CR", "2021"],
     notes: "'21",
     id: "000 000 000 002 511 21",
-    banner: "projects/06_THIS_IS_A_MESS/Frame 23.png",
+    banner: "projects/06_THIS_IS_A_MESS/Frame 30.png",
     images: [
       "projects/06_THIS_IS_A_MESS/Frame 23.png",
       "projects/06_THIS_IS_A_MESS/Frame 24.png",
@@ -205,7 +210,8 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "POSTER", "TERRINHA", "2025"],
     notes: "'25",
     id: "000 000 001 105 25",
-    banner: "projects/07_PF_2025/4 copy.png",
+    priority: 40,
+    banner: "projects/07_PF_2025/frame 34.png",
     images: [
       "projects/07_PF_2025/6 copy.png",
       "projects/07_PF_2025/Frame 32.png",
@@ -226,6 +232,7 @@ export const projectsData: Project[] = [
     notes: "'24",
     id: "000 000 002 306 24",
     banner: "projects/08_PF_2024/Frame 41.png",
+    priority: 20,
     images: [
       "projects/08_PF_2024/Frame 35.png",
       "projects/08_PF_2024/Frame 36.png",
@@ -247,7 +254,7 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "POSTER", "VALE DO PESO", "2024"],
     notes: "'24",
     id: "000 000 002 008 24",
-    banner: "projects/09_Autumn_Beer_Festival/Frame 42(1).png",
+    banner: "projects/09_Autumn_Beer_Festival/Frame 46.png",
     priority: 6,
     images: [
       "projects/09_Autumn_Beer_Festival/Frame 42(1).png",
@@ -256,11 +263,12 @@ export const projectsData: Project[] = [
       "projects/09_Autumn_Beer_Festival/Frame 45(1).png",
       "projects/09_Autumn_Beer_Festival/Frame 46(1).png",
     ],
+    style: "max-h-[13rem] object-cover",
     info_pt:
       "Em 2024, fui convidada a desenvolver uma proposta de logótipo e cartaz para o Autumn Beer Festival – Vale do Peso, um evento que celebra a cerveja artesanal, a música e o espírito comunitário no coração do Alentejo. A proposta procurou criar uma identidade visual simples mas distintiva, que transmitisse o carácter descontraído e autêntico do festival, com uma forte ligação ao imaginário da cerveja.\n\nO logótipo foi concebido para surgir integrado numa carica, remetendo de forma directa e visualmente eficaz ao universo da cerveja artesanal. Já o cartaz foi desenhado como se fosse um rótulo de cerveja, explorando o formato, a composição tipográfica e os elementos decorativos típicos desse tipo de embalagem, criando assim uma ligação imediata entre o conteúdo do evento e o seu design gráfico.",
     info_en:
       "In 2024, I was invited to develop a logo and poster proposal for the Autumn Beer Festival – Vale do Peso, an event that celebrates craft beer, music, and community spirit in the heart of the Alentejo. The aim was to create a simple yet distinctive visual identity that reflected the relaxed and authentic character of the festival, while strongly referencing the visual world of beer culture.\n\nThe logo was designed to appear within a bottle cap, offering a direct and visually effective connection to the craft beer universe. The poster was created to resemble a beer label, exploring the shape, typographic composition, and decorative elements typically found on beer packaging, establishing an immediate link between the event’s content and its graphic design.",
-  },
+    },
   {
     title: "Palheiro by J. Abade",
     projectType: ["LOGO/POSTER"],
@@ -269,7 +277,7 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "POSTER", "VALE DO PESO", "2024"],
     notes: "'24",
     id: "000 000 001 703 24",
-    banner: "projects/10_Palheiro/Slide 16_9 - 10 copy.png",
+    banner: "projects/10_Palheiro/frame 49.png",
     priority: 8,
     images: [
       "projects/10_Palheiro/Asset 1@4x copy.png",
@@ -375,7 +383,7 @@ export const projectsData: Project[] = [
     tags: ["POST", "TOCCO", "2025"],
     notes: "'25",
     id: "000 000 002 310 24",
-    banner: "projects/14_TOCCOS_POST/Frame 1.png",
+    banner: "projects/14_TOCCOS_POST/Frame 73.png",
     images: [
       "projects/14_TOCCOS_POST/Frame 1.png",
       "projects/14_TOCCOS_POST/Frame 73.png",

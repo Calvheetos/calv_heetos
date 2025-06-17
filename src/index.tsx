@@ -18,7 +18,7 @@ root.render(
     <BrowserRouter basename={consts.baseRoute}> 
       <Routes>
         <Route path="/*" element={<Home />} /> 
-        <Route path="/projects" element={<Projects />} /> 
+        <Route path="/projects-list" element={<Projects />} /> 
         <Route path="/projects-grid" element={<ProjectsGrid />} /> 
         <Route path="/projects/map" element={<ProjectMap />} /> 
         <Route path="/projects/:id" element={<ProjectPage />} /> 
