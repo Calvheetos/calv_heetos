@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className={`${IsProjectsRoute() ? "bg-black" : " bg-white"}  h-auto px-6 py-4 flex justify-between w-full items-end overflow-hidden`}>
       <nav className={`grid sm:grid-cols-3 gap-x-3 gap-y-1 ${IsProjectsRoute() ? "text-white" : " text-black"}`}>
-        <a href="/calv_heetos">Calv_Heetos</a>
+        <a href="/calv_heetos" className="sm:flex hidden">Calv_Heetos</a>
         <a href="mailto:carlottalves@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/carlotaalves/">Linkedin</a>
         <a href="/calv_heetos" className="hidden sm:flex">Graphic Designer</a>

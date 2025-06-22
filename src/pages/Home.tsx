@@ -1,4 +1,4 @@
-import cursor from '../assets/cursor.jpeg'
+import cursor from '../assets/cursor.png'
 import { Footer } from '../components/footer';
 import { NavBar } from '../components/navBar';
 export function Home() {
@@ -26,11 +26,9 @@ export function Home() {
           zIndex: "999"
         }}
       />
-      <div className='absolute top-16 left-1/2 -translate-1/2'>
-        <p className='sm:max-w-[25rem] max-w-[18rem] text-[.65rem] uppercase'>
-          An ever-growing collection of references and tools
-          for designers. Curated by Julien Van Havere, founder
-          of DesignPractice™ and TypeFoundry™.
+      <div className='absolute bottom-32 sm:bottom-auto top-auto sm:top-16 left-4 sm:left-1/2 sm:-translate-1/2'>
+        <p className='sm:max-w-[35rem] max-w-full text-[.55rem] sm:text-[.65rem] uppercase'>
+          Hey there! I’m Carlota Alves, a graphic designer based in Lisbon, Portugal. I’m specialized in branding, identity design, social media and visual communication. I’ve developed a strong passion for creating innovative and meaningful designs through my studies at ESAD and my experience. Whether it’s logo creation, print production, or digital design, I’m here to help bring your ideas to life. Feel free to check out some of my work and let’s collaborate to create something crazy!
         </p>
       </div>
       <div className="pt-28 w-full h-full min-h-[50vh] container mx-auto max-w-5xl lg:px-0 px-[8vw] flex justify-center items-center flex-col">

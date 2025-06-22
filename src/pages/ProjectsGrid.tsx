@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { projectsData } from '../data/projects';
 
 type ProjectProps = {
-    to: string;
+    to?: string;
     id?: string;
     collaborators: string[] | string;
     projectType: string[] | string;
@@ -28,7 +28,7 @@ export default function ProjectsGrid() {
 
     function Project({ to, id, collaborators, projectType, tags, banner, date, alt, style }: ProjectProps) {
         return (
-            <Link to={to} className="relative flex flex-col w-full group gap-2">
+            <Link to={to ?? `/projects/${id}`} className="relative flex flex-col w-full group gap-2">
                 <img
                     src={banner}
                     alt={alt}
@@ -57,7 +57,7 @@ export default function ProjectsGrid() {
                         .map(project => (
                             <Project
                                 key={project.id}
-                                to={project.href || "#"}
+                                to={project.href}
                                 id={project.id}
                                 collaborators={project.collaborators}
                                 projectType={project.projectType}
@@ -77,7 +77,7 @@ export default function ProjectsGrid() {
                             .map(project => (
                                 <Project
                                     key={project.id}
-                                    to={project.href || "#"}
+                                    to={project.href}
                                     id={project.id}
                                     collaborators={project.collaborators}
                                     projectType={project.projectType}
@@ -95,7 +95,7 @@ export default function ProjectsGrid() {
                             .map(project => (
                                 <Project
                                     key={project.id}
-                                    to={project.href || "#"}
+                                    to={project.href}
                                     id={project.id}
                                     collaborators={project.collaborators}
                                     projectType={project.projectType}
@@ -113,7 +113,7 @@ export default function ProjectsGrid() {
                             .map(project => (
                                 <Project
                                     key={project.id}
-                                    to={project.href || "#"}
+                                    to={project.href}
                                     id={project.id}
                                     collaborators={project.collaborators}
                                     projectType={project.projectType}
@@ -133,7 +133,7 @@ export default function ProjectsGrid() {
                         .map(project => (
                             <Project
                                 key={project.id}
-                                to={project.href || "#"}
+                                to={project.href}
                                 id={project.id}
                                 collaborators={project.collaborators}
                                 projectType={project.projectType}
@@ -153,7 +153,7 @@ export default function ProjectsGrid() {
                         .map(project => (
                             <Project
                                 key={project.id}
-                                to={project.href || "#"}
+                                to={project.href}
                                 id={project.id}
                                 collaborators={project.collaborators}
                                 projectType={project.projectType}

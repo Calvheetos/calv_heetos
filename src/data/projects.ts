@@ -211,7 +211,7 @@ export const projectsData: Project[] = [
     notes: "'25",
     id: "000 000 001 105 25",
     priority: 40,
-    banner: "projects/07_PF_2025/frame 34.png",
+    banner: "projects/07_PF_2025/Frame 34.png",
     images: [
       "projects/07_PF_2025/6 copy.png",
       "projects/07_PF_2025/Frame 32.png",
@@ -277,7 +277,7 @@ export const projectsData: Project[] = [
     tags: ["IDENTITY", "POSTER", "VALE DO PESO", "2024"],
     notes: "'24",
     id: "000 000 001 703 24",
-    banner: "projects/10_Palheiro/frame 49.png",
+    banner: "projects/10_Palheiro/Frame 49.png",
     priority: 8,
     images: [
       "projects/10_Palheiro/Asset 1@4x copy.png",
