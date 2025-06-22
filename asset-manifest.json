@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/calv_heetos/static/css/main.02b77f27.css",
-    "main.js": "/calv_heetos/static/js/main.bc5cf8c9.js",
+    "main.css": "/calv_heetos/static/css/main.f6736c24.css",
+    "main.js": "/calv_heetos/static/js/main.88c3d0f4.js",
     "static/js/787.ba9f0948.chunk.js": "/calv_heetos/static/js/787.ba9f0948.chunk.js",
+    "static/media/cursor.png": "/calv_heetos/static/media/cursor.57c61951c07352d3f88d.png",
     "static/media/foto (4).png": "/calv_heetos/static/media/foto (4).bbc40380b3c875be2e6f.png",
     "static/media/foto (2).png": "/calv_heetos/static/media/foto (2).56bba11f9046d4b824b6.png",
     "static/media/foto (38).png": "/calv_heetos/static/media/foto (38).fda8a40fd54400f0faaa.png",
@@ -84,14 +85,13 @@
     "static/media/poster (33).png": "/calv_heetos/static/media/poster (33).01d5db16a46c4966add1.png",
     "static/media/poster (15).png": "/calv_heetos/static/media/poster (15).a0e7ac3257b99c85146d.png",
     "static/media/poster (23).png": "/calv_heetos/static/media/poster (23).0a873a831dd673870ba1.png",
-    "static/media/cursor.jpeg": "/calv_heetos/static/media/cursor.3344e2b680529c673241.jpeg",
     "index.html": "/calv_heetos/index.html",
-    "main.02b77f27.css.map": "/calv_heetos/static/css/main.02b77f27.css.map",
-    "main.bc5cf8c9.js.map": "/calv_heetos/static/js/main.bc5cf8c9.js.map",
+    "main.f6736c24.css.map": "/calv_heetos/static/css/main.f6736c24.css.map",
+    "main.88c3d0f4.js.map": "/calv_heetos/static/js/main.88c3d0f4.js.map",
     "787.ba9f0948.chunk.js.map": "/calv_heetos/static/js/787.ba9f0948.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02b77f27.css",
-    "static/js/main.bc5cf8c9.js"
+    "static/css/main.f6736c24.css",
+    "static/js/main.88c3d0f4.js"
   ]
 }
