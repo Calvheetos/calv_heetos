@@ -9,6 +9,23 @@
     <meta name="description" content="Hi! Welcome to my Website" />
     <title>Calv Heetos</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        (function (location) {
+            if (location.search.charAt(1) !== '/') return;
+
+            var route = location.search.slice(1).split('&').map(function (part) {
+                return part.replace(/~and~/g, '&');
+            });
+
+            window.history.replaceState(
+                null,
+                '',
+                location.pathname.slice(0, -1) + route[0] +
+                (route[1] ? '?' + route.slice(1).join('&') : '') +
+                location.hash
+            );
+        }(window.location));
+    </script>
 </head>
 
 <body>
