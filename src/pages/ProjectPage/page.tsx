@@ -85,14 +85,13 @@ export default function ProjectDetail() {
                         </div>
                     </div>
 
-                    {project.links && Object.keys(project?.links).length && <div className="flex flex-row justify-between w-full uppercase">
-                        <p className="w-full">
-                            {language === "pt" ? "PARTILHAR" : "SHARE"}
-                        </p>
-                        <div className="flex flex-col w-full">
-                            {
-                                project.links &&
-                                Object.keys(project.links).map((key: string) => (
+                    {(project.links || project.buyLinks) && <div className="flex flex-col w-full gap-6">
+                        {project.links && Object.keys(project.links).length > 0 && <div className="flex flex-row justify-between w-full uppercase">
+                            <p className="w-full">
+                                {language === "pt" ? "PARTILHAR" : "SHARE"}
+                            </p>
+                            <div className="flex flex-col w-full">
+                                {Object.keys(project.links).map((key: string) => (
                                     <a
                                         key={key}
                                         target="_blank"
@@ -102,10 +101,28 @@ export default function ProjectDetail() {
                                     >
                                         {key}
                                     </a>
-                                ))
-                            }
-                        </div>
-                        <div className="w-full"></div>
+                                ))}
+                            </div>
+                            <div className="w-full"></div>
+                        </div>}
+
+                        {project.buyLinks && Object.keys(project.buyLinks).length > 0 && <div className="flex flex-row justify-between w-full uppercase">
+                            <div className="w-full"></div>
+                            <div className="flex flex-col w-full">
+                                {Object.keys(project.buyLinks).map((key: string) => (
+                                    <a
+                                        key={key}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href={project.buyLinks![key]}
+                                        className="uppercase cursor-pointer hover:underline"
+                                    >
+                                        {key}
+                                    </a>
+                                ))}
+                            </div>
+                            <div className="w-full"></div>
+                        </div>}
                     </div>}
 
                     <div className="flex flex-row justify-between w-full uppercase">
