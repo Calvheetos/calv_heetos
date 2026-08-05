@@ -306,10 +306,8 @@ export const projectsData: Project[] = [
     banner: "projects/11_KRIOLO/DENTRO copy.png",
     priority: 2,
     images: [
-      "projects/11_KRIOLO/CD copy.pdf",
       "projects/11_KRIOLO/DENTRO copy.png",
-      "projects/11_KRIOLO/DIJIPACK_FINAL copy.pdf",
-      "projects/11_KRIOLO/FORA_branco copy.png",
+      "projects/11_KRIOLO/DIJIPACK_FINAL copy.png",
       "projects/11_KRIOLO/FORA_c_lombada copy.png",
       "projects/11_KRIOLO/iiimsd  copy.png",
       "projects/11_KRIOLO/kkkkmsd  copy.png",
