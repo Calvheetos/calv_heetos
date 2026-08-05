@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calv Heetos</title>
+    <script>
+        (function (location) {
+            var projectPathSegments = 1;
+            var basePath = location.pathname
+                .split('/')
+                .slice(0, projectPathSegments + 1)
+                .join('/');
+            var route = location.pathname
+                .slice(1)
+                .split('/')
+                .slice(projectPathSegments)
+                .join('/')
+                .replace(/&/g, '~and~');
+            var query = location.search
+                ? '&' + location.search.slice(1).replace(/&/g, '~and~')
+                : '';
+
+            location.replace(
+                location.protocol + '//' + location.host +
+                basePath + '/?/' + route + query + location.hash
+            );
+        }(window.location));
+    </script>
+</head>
+
+<body></body>
+
+</html>
