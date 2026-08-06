@@ -288,7 +288,7 @@ export const projectsData: Project[] = [
       "projects/10_Palheiro/P_Frente copy.png",
       "projects/10_Palheiro/P_Tras copy.png",
       "projects/10_Palheiro/Slide 16_9 - 11 copy.png",
-      "projects/10_Palheiro/tras copy.tif",
+      "projects/10_Palheiro/tras copy.png",
     ],
     info_pt:
       "Em 2024, criei a identidade gráfica para o Palheiro by J. Abade, uma proposta desenvolvida no contexto do Festival da Tubra, realizado em Vale do Peso. A imagem foi pensada para ser aplicada em t-shirts, funcionando como símbolo visual do evento e reforçando o ambiente de convívio e tradição que caracteriza esta celebração local.\n\nA proposta uniu dois elementos centrais: a “tasca” e a tubra, representando visualmente o espírito rústico e descontraído do festival. O logótipo combina garrafas, copos suspensos e a própria tubra numa composição estilizada a preto e branco, com um impacto gráfico forte e uma leitura imediata. A imagem foi aplicada de forma integrada nas t-shirts — tanto na frente como nas costas — criando um objeto visual coerente, marcante e alinhado com o tom informal e irreverente do evento.\n\nEste projeto permitiu-me cruzar a identidade visual, ilustração vetorial e design aplicado ao vestuário, explorando o potencial gráfico de símbolos culturais locais e da sua apropriação festiva.",
