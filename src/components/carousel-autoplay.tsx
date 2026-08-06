@@ -11,6 +11,9 @@ interface ImageCarouselProps {
   className?: string
 }
 
+const isVideo = (src: string) => /\.(mp4|webm|ogg)(?:[?#].*)?$/i.test(src)
+const mediaUrl = (src: string) => `/calv_heetos/${src}`
+
 export default function ImageCarousel({
   images,
   altPrefix,
@@ -60,11 +63,25 @@ export default function ImageCarousel({
         <CarouselContent>
           {images.map((src, index) => (
             <CarouselItem key={index}>
-              <img
-                src={`/calv_heetos/${src}`}
-                alt={`${altPrefix} ${index + 1}`}
-                className="object-cover transition-transform"
-              />
+              {isVideo(src) ? (
+                <video
+                  src={mediaUrl(src)}
+                  aria-label={`${altPrefix} ${index + 1}`}
+                  className="object-cover w-full transition-transform"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  onPlay={() => setAutoplay(false)}
+                  onPause={() => setAutoplay(true)}
+                  onEnded={() => setAutoplay(true)}
+                />
+              ) : (
+                <img
+                  src={mediaUrl(src)}
+                  alt={`${altPrefix} ${index + 1}`}
+                  className="object-cover transition-transform"
+                />
+              )}
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -82,11 +99,22 @@ export default function ImageCarousel({
               current === index ? "border-primary" : "border-transparent"
             }`}
           >
-            <img
-              src={`/calv_heetos/${src}` || "/product.png"}
-              alt={`${altPrefix} thumbnail ${index + 1}`}
-              className="object-cover w-16 h-16"
-            />
+            {isVideo(src) ? (
+              <video
+                src={mediaUrl(src)}
+                aria-label={`${altPrefix} video thumbnail ${index + 1}`}
+                className="object-cover w-16 h-16"
+                muted
+                playsInline
+                preload="metadata"
+              />
+            ) : (
+              <img
+                src={mediaUrl(src)}
+                alt={`${altPrefix} thumbnail ${index + 1}`}
+                className="object-cover w-16 h-16"
+              />
+            )}
           </button>
         ))}
       </div>
