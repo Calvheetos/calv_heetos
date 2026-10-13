@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "./carousel"
 
 interface ImageCarouselProps {
@@ -21,6 +21,16 @@ export default function ImageCarousel({
   const [api, setApi] = useState<any>(null)
   const [current, setCurrent] = useState(0)
   const [autoplay, setAutoplay] = useState(true)
+  const [carouselHeight, setCarouselHeight] = useState<number | undefined>()
+
+  const updateCarouselHeight = useCallback((index: number) => {
+    if (!api || height) return
+
+    const activeImage = api.slideNodes()[index]?.querySelector("img")
+    if (activeImage) {
+      setCarouselHeight(activeImage.getBoundingClientRect().height)
+    }
+  }, [api, height])
 
   // Handle manual navigation
   const handleSelect = (index: number) => {
@@ -34,14 +44,27 @@ export default function ImageCarousel({
     if (!api) return
 
     const onSelect = () => {
-      setCurrent(api.selectedScrollSnap())
+      const selectedIndex = api.selectedScrollSnap()
+      setCurrent(selectedIndex)
+      requestAnimationFrame(() => updateCarouselHeight(selectedIndex))
     }
 
+    onSelect()
     api.on("select", onSelect)
+    window.addEventListener("resize", onSelect)
     return () => {
       api.off("select", onSelect)
+      window.removeEventListener("resize", onSelect)
     }
-  }, [api])
+  }, [api, height, updateCarouselHeight])
+
+  useEffect(() => {
+    if (!api) return
+
+    setCurrent(0)
+    api.scrollTo(0, true)
+    requestAnimationFrame(() => updateCarouselHeight(0))
+  }, [api, images, updateCarouselHeight])
 
   // Set up autoplay
   useEffect(() => {
@@ -55,15 +78,23 @@ export default function ImageCarousel({
   }, [api, interval, autoplay])
 
   return (
-    <div className="space-y-4">
-      <Carousel className={`w-full ${className}`} opts={{ loop: true, align: "start" }} setApi={setApi}>
+    <div className="space-y-1">
+      <Carousel
+        className={`w-full overflow-hidden transition-[height] duration-300 ease-out ${className}`}
+        opts={{ loop: true, align: "start" }}
+        setApi={setApi}
+        style={{ height: height ?? carouselHeight }}
+      >
         <CarouselContent>
           {images.map((src, index) => (
             <CarouselItem key={index}>
               <img
                 src={`/calv_heetos/${src}`}
                 alt={`${altPrefix} ${index + 1}`}
-                className="object-cover transition-transform"
+                className="block object-cover transition-transform"
+                onLoad={() => {
+                  if (index === current) updateCarouselHeight(index)
+                }}
               />
             </CarouselItem>
           ))}
@@ -73,22 +104,24 @@ export default function ImageCarousel({
       </Carousel>
 
       {/* Thumbnail navigation */}
-      <div className="flex justify-center gap-2 py-2 overflow-x-auto">
-        {images.map((src, index) => (
-          <button
-            key={index}
-            onClick={() => handleSelect(index)}
-            className={`relative flex-shrink-0 border-2 rounded overflow-hidden transition-all ${
-              current === index ? "border-primary" : "border-transparent"
-            }`}
-          >
-            <img
-              src={`/calv_heetos/${src}` || "/product.png"}
-              alt={`${altPrefix} thumbnail ${index + 1}`}
-              className="object-cover w-16 h-16"
-            />
-          </button>
-        ))}
+      <div className="overflow-x-auto">
+        <div className="flex justify-start w-max min-w-full gap-2 px-1 md:justify-center">
+          {images.map((src, index) => (
+            <button
+              key={index}
+              onClick={() => handleSelect(index)}
+              className={`relative flex h-16 flex-shrink-0 items-center justify-center overflow-hidden border-2 rounded transition-all ${
+                current === index ? "border-primary" : "border-transparent"
+              }`}
+            >
+              <img
+                src={`/calv_heetos/${src}` || "/product.png"}
+                alt={`${altPrefix} thumbnail ${index + 1}`}
+                className="block w-auto h-full object-contain"
+              />
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Dot indicators */}
