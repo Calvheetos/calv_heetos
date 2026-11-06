@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/calv_heetos/static/css/main.09778720.css",
-    "main.js": "/calv_heetos/static/js/main.e355a255.js",
+    "main.js": "/calv_heetos/static/js/main.blendbyte-7c21efb7.js",
     "static/js/913.6d6168ed.chunk.js": "/calv_heetos/static/js/913.6d6168ed.chunk.js",
     "static/media/cursor.png": "/calv_heetos/static/media/cursor.57c61951c07352d3f88d.png",
     "static/media/foto (4).png": "/calv_heetos/static/media/foto (4).bbc40380b3c875be2e6f.png",
@@ -92,6 +92,6 @@
   },
   "entrypoints": [
     "static/css/main.09778720.css",
-    "static/js/main.e355a255.js"
+    "static/js/main.blendbyte-7c21efb7.js"
   ]
 }
